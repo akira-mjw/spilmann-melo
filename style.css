@@ -1,69 +1,101 @@
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fdfcf9;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fdfbf7;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-  background: #f4eadc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
+  background: #f8f4ec;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-header .logo h1 {
-  margin: 0;
-  font-size: 22px;
+header .logo img {
+  height: 60px;
 }
 header nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-header nav ul li {
-  display: inline;
-}
-header nav ul li a, .btn-agendar {
+header nav ul li a {
   text-decoration: none;
-  padding: 8px 15px;
-  background: #c7b99e;
-  border-radius: 20px;
-  color: white;
+  color: #333;
+  font-weight: 500;
+}
+.btn-header {
+  background: #a5a58d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
   font-weight: bold;
-  border: none;
-  cursor: pointer;
 }
 
-/* Banner */
-.banner {
-  background: url('https://images.unsplash.com/photo-1599058917212-d750089bc07c') no-repeat center center/cover;
-  height: 400px;
+/* Hero */
+.hero {
+  background: url('https://images.pexels.com/photos/3373742/pexels-photo-3373742.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center/cover;
+  height: 80vh;
   display: flex;
   align-items: center;
-  color: white;
-  text-align: center;
+  justify-content: flex-start;
+  padding-left: 100px;
+  color: #333;
 }
-.banner-text {
-  background: rgba(0,0,0,0.4);
-  padding: 20px;
-  border-radius: 10px;
-  margin: auto;
+.hero-texto {
+  max-width: 500px;
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+  border-radius: 12px;
 }
-.banner button {
-  background: #c7b99e;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: none;
-  color: white;
-  cursor: pointer;
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 15px 0;
+}
+.btn-hero {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #a5a58d;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Serviços */
-#servicos {
+/* Sobre */
+.sobre {
   padding: 50px;
   text-align: center;
+}
+.sobre h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+/* Procedimentos */
+.procedimentos {
+  padding: 50px;
+  background: #f8f4ec;
+  text-align: center;
+}
+.procedimentos h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
 }
 .cards {
   display: flex;
@@ -71,50 +103,48 @@ header nav ul li a, .btn-agendar {
   gap: 20px;
 }
 .card {
-  background: #f4eadc;
-  padding: 20px;
-  border-radius: 15px;
-  width: 250px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* Sobre */
-#sobre {
-  padding: 50px;
   background: #fff;
-  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
 }
 
-/* Contato */
-#contato {
+/* Agendamento */
+.agendamento {
   padding: 50px;
-  background: #f4eadc;
   text-align: center;
 }
-form {
+.agendamento h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+.agendamento form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 400px;
   margin: auto;
 }
-form input, form select, form button {
-  padding: 10px;
-  border-radius: 10px;
+.agendamento input, .agendamento select {
+  padding: 12px;
   border: 1px solid #ccc;
+  border-radius: 8px;
 }
-form button {
-  background: #c7b99e;
+.agendamento button {
+  background: #a5a58d;
+  color: #fff;
+  padding: 12px;
   border: none;
-  color: white;
-  font-weight: bold;
+  border-radius: 25px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* Rodapé */
 footer {
-  background: #c7b99e;
-  padding: 15px;
+  background: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  color: white;
 }

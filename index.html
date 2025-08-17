@@ -1,85 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spilmann & Melo - Estética</title>
+  <title>Spilmann Melo - Estética</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Fonte parecida com a referência -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header>
     <div class="logo">
-      <h1>Spilmann & Melo</h1>
-      <p>Confie no melhor</p>
+      <img src="imagens/logo.png" alt="Logo Spilmann Melo">
     </div>
     <nav>
       <ul>
-        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#procedimentos">Procedimentos</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><button class="btn-agendar" onclick="abrirFormulario()">Agendar Online</button></li>
       </ul>
     </nav>
+    <a href="#agendamento" class="btn-header">Agendar Online</a>
   </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <div class="banner-text">
-      <h2>Sua jornada de bem-estar começa agora!</h2>
-      <p>Tratamentos de estética, cirurgias plásticas e procedimentos para realçar sua beleza com segurança.</p>
-      <button onclick="abrirFormulario()">Agendar tratamento</button>
-    </div>
-  </section>
-
-  <!-- Serviços -->
-  <section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Limpeza de Pele</h3>
-        <p>Procedimento para remoção de impurezas e rejuvenescimento.</p>
-      </div>
-      <div class="card">
-        <h3>Botox</h3>
-        <p>Tratamento eficaz contra linhas de expressão e rugas.</p>
-      </div>
-      <div class="card">
-        <h3>Cirurgia Plástica</h3>
-        <p>Procedimentos cirúrgicos com equipe especializada e segurança.</p>
-      </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Sua jornada de bem-estar começa agora!</h1>
+      <p>Na Spilmann Melo oferecemos os melhores tratamentos de estética e bem-estar para valorizar a sua beleza natural.</p>
+      <a href="#agendamento" class="btn-hero">Agendar tratamento</a>
     </div>
   </section>
 
   <!-- Sobre -->
-  <section id="sobre">
+  <section id="sobre" class="sobre">
     <h2>Sobre Nós</h2>
-    <p>A clínica Spilmann & Melo oferece tratamentos de estética e cirurgias plásticas com profissionais qualificados, tecnologia de ponta e total cuidado com a sua saúde e autoestima.</p>
+    <p>A Spilmann Melo é especializada em procedimentos estéticos modernos, seguros e eficazes. Nossa missão é promover saúde, confiança e bem-estar.</p>
   </section>
 
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Agende sua consulta</h2>
-    <form id="form-agendamento">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <input type="date" required>
+  <!-- Procedimentos -->
+  <section id="procedimentos" class="procedimentos">
+    <h2>Procedimentos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Botox</h3>
+        <p>Rejuvenescimento facial com aplicação segura e eficaz.</p>
+      </div>
+      <div class="card">
+        <h3>Preenchimento</h3>
+        <p>Harmonização facial para realçar sua beleza.</p>
+      </div>
+      <div class="card">
+        <h3>Peeling</h3>
+        <p>Tratamento para renovação celular e pele mais jovem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agendamento -->
+  <section id="agendamento" class="agendamento">
+    <h2>Agende seu tratamento</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
       <select required>
         <option value="">Selecione o procedimento</option>
-        <option>Limpeza de Pele</option>
         <option>Botox</option>
-        <option>Cirurgia Plástica</option>
+        <option>Preenchimento</option>
+        <option>Peeling</option>
       </select>
       <button type="submit">Agendar</button>
     </form>
   </section>
 
   <!-- Rodapé -->
-  <footer>
-    <p>© 2025 Spilmann & Melo - Todos os direitos reservados</p>
+  <footer id="contato">
+    <p>© 2025 Spilmann Melo - Todos os direitos reservados</p>
+    <p>Contato: contato@spilmannmelo.com | (41) 99999-9999</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

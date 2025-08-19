@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Estética</title>
+  <title>Spilmann Melo Estética</title>
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amoria&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -20,15 +20,16 @@
 
   <!-- Cabeçalho -->
   <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica"></a>
-      </div>
+    <div class="caixa">
+      <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo Spilmann Melo"></a></h1>
       <nav>
         <ul>
-          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </div>
@@ -39,34 +40,37 @@
     <img class="banner" src="img/imagem banner github.png" alt="Banner da Clínica">
   </section>
 
-  <!-- Seção Principal -->
-  <main class="container principal">
-    <section class="apresentacao">
+  <!-- Seção principal -->
+  <main>
+    <section class="principal">
       <h2 class="titulo-principal">Bem-vindo à Clínica Estética</h2>
       <p>Proporcionamos cuidado, bem-estar e autoestima com os melhores tratamentos estéticos da região.</p>
       <a href="agendamento.html" class="btn-agendar">Agende Agora</a>
     </section>
 
     <!-- Cards de Procedimentos -->
-    <section class="procedimentos-grid">
-      <div class="card">
-        <img src="img/imagem seringas github.png" alt="Procedimento Facial">
-        <h3>Facial</h3>
-        <p>Tratamentos faciais completos.</p>
-      </div>
-      <div class="card">
-        <img src="img/imagem corpo github.jpg" alt="Procedimento Corporal">
-        <h3>Corporal</h3>
-        <p>Massagens e tratamentos corporais.</p>
-      </div>
-      <div class="card">
-        <img src="img/imagem cabelo github.jpg" alt="Procedimento Capilar">
-        <h3>Capilar</h3>
-        <p>Cuidado completo com cabelo e couro cabeludo.</p>
+    <section class="procedimentos">
+      <h2 class="titulo-principal">Nossos Procedimentos</h2>
+      <div class="procedimentos-grid">
+        <div class="card">
+          <img src="img/imagem seringas github.png" alt="Procedimento Facial">
+          <h3>Facial</h3>
+          <p>Tratamentos faciais completos.</p>
+        </div>
+        <div class="card">
+          <img src="img/imagem corpo github.jpg" alt="Procedimento Corporal">
+          <h3>Corporal</h3>
+          <p>Massagens e tratamentos corporais.</p>
+        </div>
+        <div class="card">
+          <img src="img/imagem cabelo github.jpg" alt="Procedimento Capilar">
+          <h3>Capilar</h3>
+          <p>Cuidado completo com cabelo e couro cabeludo.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Vídeo -->
+    <!-- Vídeo explicativo -->
     <section class="video">
       <h2 class="titulo-principal">Conheça Nossa Clínica</h2>
       <iframe src="https://www.youtube.com/embed/y4yTpwh_ZFY" title="Vídeo explicativo" allowfullscreen></iframe>
@@ -76,16 +80,19 @@
     <section class="mapa">
       <h2 class="titulo-principal">Nosso Local</h2>
       <div class="mapa-conteudo">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.354358674008!2d-48.35118368499072!3d-25.869771983520993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dc00123abcd123%3A0xabcdef1234567890!2sCentro%2C%20Matinhos%2C%20PR%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1692469829472!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.354358674008!2d-48.35118368499072!3d-25.869771983520993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dc00123abcd123%3A0xabcdef1234567890!2sCentro%2C%20Matinhos%2C%20PR%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1692469829472!5m2!1spt-BR!2sbr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
     </section>
   </main>
 
   <!-- Rodapé -->
   <footer>
-    <div class="container">
-      <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
-      <p>&copy; 2025 Clínica Estética</p>
+    <div class="rodape-container">
+      <img src="img/procedimentos de estetica (1).png" alt="Logo Rodapé">
+      <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
     </div>
   </footer>
 

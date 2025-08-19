@@ -5,113 +5,93 @@
   box-sizing: border-box;
 }
 
+/* Fonte */
 body {
-  font-family: "Roboto", sans-serif;
-  background: #fff;
+  font-family: 'Roboto', sans-serif;
   color: #333;
-  text-align: center;
-}
-
-/* HEADER */
-header {
-  background: #f8f8f8;
-  padding: 15px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  color: #222;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #b48c8c;
-}
-
-/* BANNER */
-.banner img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin: 20px auto;
-  display: block;
-}
-
-/* VÍDEO */
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin: 30px auto;
-}
-
-.video-container iframe {
-  width: 80%;
-  max-width: 800px;
-  height: 450px;
-  border-radius: 20px;
-  border: none;
-}
-
-/* SEÇÕES */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-section h2 {
-  margin-bottom: 15px;
-  font-size: 28px;
-  color: #444;
-}
-
-section p {
-  font-size: 18px;
-  color: #555;
+  background: #fafafa;
   line-height: 1.6;
 }
 
-/* FORMULÁRIO */
-form input, form button {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  background: #222;
+  padding: 15px;
 }
 
-form button {
-  background: #b48c8c;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
-form button:hover {
-  background: #a07a7a;
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #f2c14e;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* SOBRE */
+.sobre {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 12px;
 }
 
 /* RODAPÉ */
 footer {
-  background: #f1f1f1;
-  padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
   margin-top: 40px;
 }
 
-footer img {
+.logo-footer {
   width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px auto;
 }

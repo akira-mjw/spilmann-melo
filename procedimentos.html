@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
-  <title>Procedimentos - Clínica Spilmann Melo</title>
-  <link rel="stylesheet" href="reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedimentos - Spilmann Melo Estética</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <!-- Cabeçalho -->
   <header>
     <div class="caixa">
-      <h1><img src="img/logo.png" alt="Logo Clínica"></h1>
+      <h1 class="logo"><a href="index.html">Spilmann Melo</a></h1>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html" id="loginBtn">Login</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <ul class="produtos">
-      <li>
-        <h2>Botox</h2>
-        <img src="img/botox.jpg" alt="Botox">
-        <p class="produto-descricao">Tratamento para suavizar rugas e linhas de expressão.</p>
-        <p class="produto-preco">R$ 900,00</p>
-      </li>
-      <li>
-        <h2>Preenchimento Facial</h2>
-        <img src="img/preenchimento.jpg" alt="Preenchimento">
-        <p class="produto-descricao">Harmonização e rejuvenescimento com ácido hialurônico.</p>
-        <p class="produto-preco">R$ 1200,00</p>
-      </li>
-      <li>
-        <h2>Peeling Químico</h2>
-        <img src="img/peeling.jpg" alt="Peeling">
-        <p class="produto-descricao">Melhora da textura e clareamento da pele.</p>
-        <p class="produto-preco">R$ 400,00</p>
-      </li>
-    </ul>
+  <!-- Conteúdo -->
+  <main class="principal">
+    <h2 class="titulo-principal">Procedimentos</h2>
+    <p>Conheça alguns dos nossos principais tratamentos estéticos:</p>
+
+    <section class="procedimentos-grid">
+      <article class="card">
+        <h3>Botox</h3>
+        <p>Redução de linhas de expressão e prevenção do envelhecimento facial.</p>
+      </article>
+
+      <article class="card">
+        <h3>Preenchimento Facial</h3>
+        <p>Realce da beleza natural, promovendo volume e harmonia facial.</p>
+      </article>
+
+      <article class="card">
+        <h3>Limpeza de Pele</h3>
+        <p>Tratamento essencial para renovação celular e saúde da pele.</p>
+      </article>
+
+      <article class="card">
+        <h3>Peeling Químico</h3>
+        <p>Suavização de manchas, cicatrizes e sinais do tempo.</p>
+      </article>
+
+      <article class="card">
+        <h3>Microagulhamento</h3>
+        <p>Estimulação do colágeno para rejuvenescimento e firmeza da pele.</p>
+      </article>
+
+      <article class="card">
+        <h3>Drenagem Linfática</h3>
+        <p>Melhora da circulação, eliminação de toxinas e redução de inchaços.</p>
+      </article>
+    </section>
   </main>
 
+  <!-- Rodapé -->
   <footer>
-    <img src="img/logo-branco.png" alt="Logo Clínica">
-    <p class="copyright">&copy; 2025 Clínica Spilmann Melo - Estética</p>
+    <p class="copyright">
+      &copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.
+    </p>
   </footer>
 </body>
-
 </html>

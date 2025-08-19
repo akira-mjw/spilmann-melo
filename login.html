@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Spilmann Melo Estética</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
 </head>
 <body>
+
   <!-- Cabeçalho -->
   <header>
     <div class="caixa">
-      <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo"></a></h1>
+      <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:180px;"></a></h1>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
@@ -25,29 +35,37 @@
     </div>
   </header>
 
-  <!-- Conteúdo -->
-  <main class="principal">
-    <h2 class="titulo-principal">Área de Login</h2>
+  <!-- Área principal -->
+  <main class="principal" style="display:flex; justify-content:center; align-items:center; min-height:70vh; background:#fff;">
+    <div style="background:#fafafa; padding:40px; border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.08); width:100%; max-width:400px; text-align:center; font-family:'Roboto', sans-serif;">
+      
+      <h2 class="titulo-principal">Área de Login</h2>
+      <p style="margin-bottom:20px;">Acesse sua conta para agendar ou acompanhar seus procedimentos.</p>
 
-    <form id="formLogin" class="formulario">
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+      <!-- Formulário -->
+      <form action="#" method="post" style="display:flex; flex-direction:column; gap:15px;">
+        <input type="email" name="email" placeholder="Digite seu e-mail" required style="padding:12px; border-radius:8px; border:1px solid #ccc;">
+        
+        <input type="password" name="senha" placeholder="Digite sua senha" required style="padding:12px; border-radius:8px; border:1px solid #ccc;">
+        
+        <button type="submit" style="background:#e5d4b6; padding:12px; border:none; border-radius:8px; cursor:pointer; font-weight:bold; transition:0.3s;">
+          Entrar
+        </button>
+      </form>
 
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required>
-
-      <button type="submit" class="btn-agendar">Entrar</button>
-
-      <p class="mensagem-login">
-        Não tem conta? <a href="#">Cadastre-se</a>
-      </p>
-    </form>
+      <!-- Links extras -->
+      <div style="margin-top:20px; font-size:14px;">
+        <p><a href="#" style="color:#6b5e5e; text-decoration:none;">Esqueceu sua senha?</a></p>
+        <p>Não tem conta? <a href="#" style="color:#6b5e5e; font-weight:bold; text-decoration:none;">Cadastre-se</a></p>
+      </div>
+    </div>
   </main>
 
   <!-- Rodapé -->
-  <footer>
-    <img src="img/procedimentos de estetica (1).png" alt="Logo">
-    <p class="copyright">&copy; 2025 Spilmann Melo Estética</p>
+  <footer style="background-color:#f4ecd0; padding:50px 20px; text-align:center; color:#655e5e; margin-top:40px;">
+    <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:120px; margin-bottom:15px;">
+    <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>

@@ -1,95 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Estética</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Estética - Spilmann Melo</title>
 
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- JS -->
-    <script defer src="script.js"></script>
+  <!-- JS -->
+  <script defer src="script.js"></script>
 </head>
-
 <body>
 
-    <header>
-        <div class="caixa">
-            <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="procedimentos.html">Procedimentos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="caixa">
+      <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:180px;"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="procedimentos.html">Procedimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Banner -->
-    <img class="banner" src="img/imagem banner github.png" alt="Banner da Clínica">
+  <!-- Banner -->
+  <section style="text-align:center; margin:30px 0;">
+    <img class="banner" src="img/imagem banner github.png" alt="Banner da Clínica" style="width:90%; max-width:1100px; height:auto; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+  </section>
 
-    <main>
-        <!-- Seção principal -->
-        <section class="principal">
-            <h2 class="titulo-principal">Bem-vindo à Clínica Estética</h2>
-            <p>Proporcionamos cuidado, bem-estar e autoestima com os melhores tratamentos estéticos da região.</p>
-            <button class="btn-agendar">Agende Agora</button>
-        </section>
+  <!-- Seção principal -->
+  <main class="principal" style="max-width:1100px; margin:40px auto; padding:30px; border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.05);">
+    <h2 class="titulo-principal">Bem-vindo à Clínica Estética</h2>
+    <p style="font-family:'Roboto', sans-serif; font-size:18px;">Proporcionamos cuidado, bem-estar e autoestima com os melhores tratamentos estéticos da região.</p>
+    <button class="btn-agendar">Agende Agora</button>
+  </main>
 
-        <!-- Cards de Procedimentos -->
-        <section class="procedimentos">
-            <h2 class="titulo-principal">Nossos Procedimentos</h2>
-            <div class="procedimentos-grid">
-                <div class="card">
-                    <img src="img/imagem seringas github.png" alt="Procedimento Facial">
-                    <h3>Facial</h3>
-                    <p>Tratamentos faciais completos.</p>
-                </div>
-                <div class="card">
-                    <img src="img/imagem corpo github.jpg" alt="Procedimento Corporal">
-                    <h3>Corporal</h3>
-                    <p>Massagens e tratamentos corporais.</p>
-                </div>
-                <div class="card">
-                    <img src="img/imagem cabelo github.jpg" alt="Procedimento Capilar">
-                    <h3>Capilar</h3>
-                    <p>Cuidado completo com cabelo e couro cabeludo.</p>
-                </div>
-            </div>
-        </section>
+  <!-- Cards de Procedimentos -->
+  <section class="procedimentos" style="max-width:1100px; margin:40px auto;">
+    <h2 class="titulo-principal">Nossos Procedimentos</h2>
+    <div class="procedimentos-grid" style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:30px;">
 
-        <!-- Vídeo explicativo -->
-        <section class="video">
-            <h2 class="titulo-principal">Conheça Nossa Clínica</h2>
-            <iframe src="https://www.youtube.com/embed/y4yTpwh_ZFY" title="Vídeo explicativo" allowfullscreen></iframe>
-        </section>
+      <div class="card" style="flex:0 1 250px; display:flex; flex-direction:column; align-items:center; padding:20px; border-radius:15px; background-color:#f4ecd0; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+        <img src="img/imagem seringas github.png" alt="Procedimento Facial" style="width:100px; height:auto; margin-bottom:15px;">
+        <h3>Facial</h3>
+        <p>Tratamentos faciais completos.</p>
+      </div>
 
-        <!-- Mapa -->
-        <section class="mapa">
-            <h2 class="titulo-principal">Nosso Local</h2>
-            <div class="mapa-conteudo">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.354358674008!2d-48.35118368499072!3d-25.869771983520993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dc00123abcd123%3A0xabcdef1234567890!2sCentro%2C%20Matinhos%2C%20PR%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1692469829472!5m2!1spt-BR!2sbr"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-        </section>
+      <div class="card" style="flex:0 1 250px; display:flex; flex-direction:column; align-items:center; padding:20px; border-radius:15px; background-color:#f4ecd0; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+        <img src="img/imagem corpo github.jpg" alt="Procedimento Corporal" style="width:100px; height:auto; margin-bottom:15px;">
+        <h3>Corporal</h3>
+        <p>Massagens e tratamentos corporais.</p>
+      </div>
 
-    </main>
+      <div class="card" style="flex:0 1 250px; display:flex; flex-direction:column; align-items:center; padding:20px; border-radius:15px; background-color:#f4ecd0; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+        <img src="img/imagem cabelo github.jpg" alt="Procedimento Capilar" style="width:100px; height:auto; margin-bottom:15px;">
+        <h3>Capilar</h3>
+        <p>Cuidado completo com cabelo e couro cabeludo.</p>
+      </div>
 
-    <footer>
-        <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
-        <p class="copyright">&copy; 2025 Clínica Estética</p>
-    </footer>
+    </div>
+  </section>
+
+  <!-- Vídeo explicativo -->
+  <section class="video" style="max-width:720px; margin:40px auto; border-radius:15px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+    <h2 class="titulo-principal">Conheça Nossa Clínica</h2>
+    <iframe src="https://www.youtube.com/embed/y4yTpwh_ZFY" title="Vídeo explicativo" allowfullscreen style="width:100%; height:405px; border:none;"></iframe>
+  </section>
+
+  <!-- Mapa -->
+  <section class="mapa" style="max-width:940px; margin:40px auto; border-radius:15px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+    <h2 class="titulo-principal">Nosso Local</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.354358674008!2d-48.35118368499072!3d-25.869771983520993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dc00123abcd123%3A0xabcdef1234567890!2sCentro%2C%20Matinhos%2C%20PR%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1692469829472!5m2!1spt-BR!2sbr"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Rodapé -->
+  <footer style="background-color:#f4ecd0; padding:50px 20px; text-align:center; color:#655e5e;">
+    <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:120px; margin-bottom:15px;">
+    <p>&copy; 2025 Clínica Estética</p>
+  </footer>
 
 </body>
-
 </html>

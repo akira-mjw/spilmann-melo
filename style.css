@@ -1,173 +1,204 @@
-/* Reset de imagens */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+/* FONTES: Amoria para títulos, Roboto para corpo */
+@import url('https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap');
 
-/* Banner */
-.banner {
-  width: 100%;
-  max-width: 1000px;
-  /* largura máxima para não esticar demais */
-  height: auto;
-  /* mantém a proporção da imagem */
-  object-fit: cover;
-  /* garante que a imagem preencha a área sem deformar */
-  display: block;
-  margin: 0 auto;
-  /* centraliza horizontalmente */
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Cards */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.card {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  /* força o tamanho igual */
-  object-fit: cover;
-  /* corta proporcionalmente */
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-/* Seções de texto (para não ficar escondido) */
-section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Formulários */
-form {
-  max-width: 500px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  /* garante que fique acima das imagens */
-}
-/* ============================= */
-/* Formulários */
-.formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-/* Labels */
-.formulario label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #655e5e;
-    font-size: 16px;
-}
-
-/* Inputs e textarea */
-.formulario input,
-.formulario select,
-.formulario textarea {
-    padding: 12px 18px;
-    border: 2px solid #b2b09b;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Foco nos inputs */
-.formulario input:focus,
-.formulario select:focus,
-.formulario textarea:focus {
-    border-color: #655e5e;
-    box-shadow: 0 0 10px rgba(101,94,94,0.3);
-}
-
-/* Botão de enviar/agendar */
-.formulario .btn-agendar {
-    margin-top: 10px;
-    width: 100%;
-    border-radius: 50px;
-    font-size: 18px;
-}
-
-/* Mensagem de login */
-.mensagem-login {
-    margin-top: 15px;
-    font-size: 14px;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fffdf7; /* cor principal */
+    color: #655e5e; /* cor da letra */
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.mensagem-login a {
-    color: #b2b09b;
-    text-decoration: none;
-    font-weight: bold;
+/* Cabeçalho */
+header {
+    background-color: #f4ecd0; /* cor secundária */
+    padding: 25px 0;
 }
 
-.mensagem-login a:hover {
+.caixa {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo a img {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav a {
+    text-transform: uppercase;
     color: #655e5e;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* ============================= */
-/* Contato - informações laterais */
-.info-contato {
-    background-color: #f4ecd0;
-    padding: 25px;
+nav a:hover,
+nav a.ativo {
+    color: #b2b09b; /* destaque */
+}
+
+/* Banner */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto; /* mantém proporção */
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Seções principais */
+.principal {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffdf7;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.contato-grid {
+.titulo-principal {
+    font-family: 'Amoria', cursive;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+/* Cards de procedimentos */
+.procedimentos-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
+    margin-top: 20px;
 }
 
-.info-contato h3 {
-    margin-top: 0;
+.card {
+    background-color: #f4ecd0;
+    width: 220px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Responsividade dos formulários */
+.card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Botões circulares "Agende Agora" */
+.btn-agendar {
+    background-color: #b2b09b; /* cor destaque */
+    color: #fffdf7;
+    padding: 18px 40px;
+    border-radius: 50px; /* circular/oval */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-agendar:hover {
+    background-color: #655e5e;
+    transform: scale(1.1);
+}
+
+/* Vídeo centralizado */
+.video {
+    max-width: 720px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video iframe {
+    width: 100%;
+    height: 405px;
+    border: none;
+}
+
+/* Mapa centralizado */
+.mapa-conteudo {
+    width: 100%;
+    max-width: 940px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.mapa-conteudo iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f4ecd0;
+    padding: 50px 20px;
+    text-align: center;
+    color: #655e5e;
+}
+
+/* Responsividade */
 @media screen and (max-width: 768px) {
-    .formulario {
-        max-width: 90%;
+    .card {
+        width: 180px;
+        padding: 15px;
     }
 
-    .contato-grid {
+    .banner {
+        max-height: 300px;
+    }
+
+    nav ul {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .info-contato {
-        width: 90%;
+        gap: 15px;
     }
 }

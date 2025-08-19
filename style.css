@@ -1,39 +1,47 @@
-/* Fonte padrão levemente itálica */
+/* FONTES: Amoria para títulos, Apple Garamond para corpo */
+@import url('https://fonts.googleapis.com/css2?family=Amoria&display=swap');
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Apple Garamond', serif;
     font-style: italic;
-    background-color: #fffdf7; /* Cor principal (fundo) */
-    color: #655e5e; /* Cor da letra */
+    background-color: #fffdf7; /* cor principal */
+    color: #655e5e; /* cor da letra */
     margin: 0;
     padding: 0;
+    text-align: center; /* todo texto centralizado */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #f4ecd0; /* Cor secundária */
-    padding: 20px 0;
+    background-color: #f4ecd0; /* cor secundária */
+    padding: 25px 0;
 }
 
 .caixa {
-    max-width: 940px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    gap: 15px;
 }
 
 .logo a {
     text-decoration: none;
-    font-size: 28px;
+    font-family: 'Amoria', cursive;
+    font-size: 36px;
     font-weight: bold;
     color: #655e5e;
 }
 
+/* Navegação centralizada */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
 nav a {
@@ -42,107 +50,145 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #b2b09b; /* Cor de destaque */
+    color: #b2b09b; /* destaque */
 }
 
-/* Principal */
-.principal {
-    max-width: 940px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fffdf7;
-    border-radius: 10px;
-}
-
-.titulo-principal {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Formularios */
-.formulario label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.formulario input,
-.formulario textarea,
-.formulario select {
+/* Banner */
+.banner {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #b2b09b;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #655e5e;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Seções principais */
+.principal {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffdf7;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Títulos importantes */
+.titulo-principal {
+    font-family: 'Amoria', cursive;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+/* Cards de procedimentos (circulares) */
+.procedimentos-grid,
+.conteudo-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card,
+.itens-beneficio {
+    background-color: #f4ecd0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; /* totalmente circular */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover,
+.itens-beneficio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Botões circulares "Agende Agora" */
 .btn-agendar {
-    background-color: #b2b09b; /* Cor de destaque */
+    background-color: #b2b09b; /* cor destaque */
     color: #fffdf7;
-    padding: 12px 25px;
+    padding: 18px 40px;
+    border-radius: 50px; /* circular/oval */
     border: none;
-    border-radius: 5px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
 }
 
 .btn-agendar:hover {
     background-color: #655e5e;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* Cards de procedimentos */
-.procedimentos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+/* Vídeo centralizado */
+.video {
+    max-width: 720px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.card {
-    background-color: #f4ecd0;
-    padding: 20px;
-    border-radius: 10px;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease;
+.video iframe {
+    width: 100%;
+    height: 405px;
+    border: none;
 }
 
-.card:hover {
-    transform: scale(1.05);
+/* Mapa centralizado */
+.mapa-conteudo {
+    width: 100%;
+    max-width: 940px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.mapa-conteudo iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
     background-color: #f4ecd0;
-    padding: 30px 0;
+    padding: 50px 20px;
+    text-align: center;
     color: #655e5e;
-    margin-top: 40px;
 }
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
-    .caixa {
-        flex-direction: column;
-        text-align: center;
+    .card,
+    .itens-beneficio {
+        width: 180px;
+        height: 180px;
+    }
+
+    .banner {
+        max-height: 300px;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .procedimentos-grid {
-        flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
 }
-

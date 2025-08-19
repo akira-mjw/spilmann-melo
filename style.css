@@ -8,17 +8,19 @@ img {
 /* Banner */
 .banner {
   width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 30px;
+  max-width: 1000px;
+  /* largura máxima para não esticar demais */
+  height: auto;
+  /* mantém a proporção da imagem */
+  object-fit: cover;
+  /* garante que a imagem preencha a área sem deformar */
+  display: block;
+  margin: 0 auto;
+  /* centraliza horizontalmente */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* Cards */
 .cards {
@@ -33,15 +35,17 @@ img {
 .card {
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: center;
 }
 
 .card img {
   width: 100%;
-  height: 180px;        /* força o tamanho igual */
-  object-fit: cover;    /* corta proporcionalmente */
+  height: 180px;
+  /* força o tamanho igual */
+  object-fit: cover;
+  /* corta proporcionalmente */
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -60,7 +64,110 @@ form {
   background: #fff;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 1; /* garante que fique acima das imagens */
+  z-index: 1;
+  /* garante que fique acima das imagens */
+}
+/* ============================= */
+/* Formulários */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Labels */
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #655e5e;
+    font-size: 16px;
+}
+
+/* Inputs e textarea */
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 12px 18px;
+    border: 2px solid #b2b09b;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Foco nos inputs */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: #655e5e;
+    box-shadow: 0 0 10px rgba(101,94,94,0.3);
+}
+
+/* Botão de enviar/agendar */
+.formulario .btn-agendar {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+/* Mensagem de login */
+.mensagem-login {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.mensagem-login a {
+    color: #b2b09b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mensagem-login a:hover {
+    color: #655e5e;
+}
+
+/* ============================= */
+/* Contato - informações laterais */
+.info-contato {
+    background-color: #f4ecd0;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.contato-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info-contato h3 {
+    margin-top: 0;
+}
+
+/* Responsividade dos formulários */
+@media screen and (max-width: 768px) {
+    .formulario {
+        max-width: 90%;
+    }
+
+    .contato-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-contato {
+        width: 90%;
+    }
 }

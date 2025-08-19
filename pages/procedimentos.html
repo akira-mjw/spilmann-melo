@@ -4,28 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Procedimentos - Spilmann Melo Estética</title>
-  <link rel="stylesheet" href="../style.css">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="procedimentos.html">Procedimentos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="procedimentos.html" class="ativo">Procedimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Nossos Procedimentos</h2>
-    <p>Botox, preenchimento, harmonização facial e muito mais. Trabalhamos com segurança e resultados naturais.</p>
-  </section>
+  <!-- Conteúdo Principal -->
+  <main class="container principal">
+    <h2 class="titulo-principal">Procedimentos</h2>
+    <p>Conheça alguns dos nossos principais tratamentos estéticos:</p>
 
+    <section class="procedimentos-grid">
+      <article class="card">
+        <h3>Botox</h3>
+        <p>Redução de linhas de expressão e prevenção do envelhecimento facial.</p>
+      </article>
+
+      <article class="card">
+        <h3>Preenchimento Facial</h3>
+        <p>Realce da beleza natural, promovendo volume e harmonia facial.</p>
+      </article>
+
+      <article class="card">
+        <h3>Limpeza de Pele</h3>
+        <p>Tratamento essencial para renovação celular e saúde da pele.</p>
+      </article>
+
+      <article class="card">
+        <h3>Peeling Químico</h3>
+        <p>Suavização de manchas, cicatrizes e sinais do tempo.</p>
+      </article>
+
+      <article class="card">
+        <h3>Microagulhamento</h3>
+        <p>Estimulação do colágeno para rejuvenescimento e firmeza da pele.</p>
+      </article>
+
+      <article class="card">
+        <h3>Drenagem Linfática</h3>
+        <p>Melhora da circulação, eliminação de toxinas e redução de inchaços.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
   <footer>
-    <img src="../assets/logo.png" alt="Logo Spilmann Melo">
-    <p>© 2025 Spilmann Melo Estética</p>
+    <div class="container">
+      <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
+      <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
+    </div>
   </footer>
+
 </body>
 </html>

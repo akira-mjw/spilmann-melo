@@ -14,18 +14,19 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- JS -->
-  <script defer src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header>
-    <div class="caixa">
-      <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:180px;"></a></h1>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica"></a>
+      </div>
       <nav>
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html" class="ativo">Sobre</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
           <li><a href="agendamento.html">Agendamento</a></li>
           <li><a href="contato.html">Contato</a></li>
@@ -35,8 +36,8 @@
     </div>
   </header>
 
-  <!-- Conteúdo principal -->
-  <main class="principal" style="max-width:900px; margin:40px auto; padding:30px; border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.05); text-align:left; font-family:'Roboto', sans-serif;">
+  <!-- Conteúdo Principal -->
+  <main class="container principal">
     <h2 class="titulo-principal">Sobre Nós</h2>
     <p>
       A <strong>Spilmann Melo Estética</strong> nasceu com o propósito de unir 
@@ -55,7 +56,7 @@
     </p>
 
     <h3>Nossos Valores</h3>
-    <ul style="list-style:none; padding:0;">
+    <ul class="valores">
       <li>🌸 Ética e transparência</li>
       <li>🌸 Respeito à individualidade</li>
       <li>🌸 Bem-estar em primeiro lugar</li>
@@ -64,9 +65,11 @@
   </main>
 
   <!-- Rodapé -->
-  <footer style="background-color:#f4ecd0; padding:50px 20px; text-align:center; color:#655e5e;">
-    <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:120px; margin-bottom:15px;">
-    <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
+  <footer>
+    <div class="container">
+      <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
+      <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
+    </div>
   </footer>
 
 </body>

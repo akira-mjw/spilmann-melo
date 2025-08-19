@@ -4,68 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Spilmann Melo Estética</title>
-
-  <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- JS -->
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
-  <!-- Cabeçalho -->
   <header>
-    <div class="caixa">
-      <h1 class="logo"><a href="index.html"><img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:180px;"></a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="procedimentos.html">Procedimentos</a></li>
-          <li><a href="agendamento.html">Agendamento</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="login.html" class="ativo">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="procedimentos.html">Procedimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Área principal -->
-  <main class="principal" style="display:flex; justify-content:center; align-items:center; min-height:70vh; background:#fff;">
-    <div style="background:#fafafa; padding:40px; border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.08); width:100%; max-width:400px; text-align:center; font-family:'Roboto', sans-serif;">
-      
-      <h2 class="titulo-principal">Área de Login</h2>
-      <p style="margin-bottom:20px;">Acesse sua conta para agendar ou acompanhar seus procedimentos.</p>
+  <section>
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required><br><br>
+      <input type="password" placeholder="Senha" required><br><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
 
-      <!-- Formulário -->
-      <form action="#" method="post" style="display:flex; flex-direction:column; gap:15px;">
-        <input type="email" name="email" placeholder="Digite seu e-mail" required style="padding:12px; border-radius:8px; border:1px solid #ccc;">
-        
-        <input type="password" name="senha" placeholder="Digite sua senha" required style="padding:12px; border-radius:8px; border:1px solid #ccc;">
-        
-        <button type="submit" style="background:#e5d4b6; padding:12px; border:none; border-radius:8px; cursor:pointer; font-weight:bold; transition:0.3s;">
-          Entrar
-        </button>
-      </form>
-
-      <!-- Links extras -->
-      <div style="margin-top:20px; font-size:14px;">
-        <p><a href="#" style="color:#6b5e5e; text-decoration:none;">Esqueceu sua senha?</a></p>
-        <p>Não tem conta? <a href="#" style="color:#6b5e5e; font-weight:bold; text-decoration:none;">Cadastre-se</a></p>
-      </div>
-    </div>
-  </main>
-
-  <!-- Rodapé -->
-  <footer style="background-color:#f4ecd0; padding:50px 20px; text-align:center; color:#655e5e; margin-top:40px;">
-    <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica" style="width:120px; margin-bottom:15px;">
-    <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
+  <footer>
+    <img src="../assets/logo.png" alt="Logo Spilmann Melo">
+    <p>© 2025 Spilmann Melo Estética</p>
   </footer>
-
 </body>
 </html>

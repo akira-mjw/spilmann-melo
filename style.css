@@ -1,204 +1,117 @@
-/* FONTES: Amoria para títulos, Roboto para corpo */
-@import url('https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap');
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fffdf7; /* cor principal */
-    color: #655e5e; /* cor da letra */
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #333;
+  text-align: center;
 }
 
-/* Cabeçalho */
+/* HEADER */
 header {
-    background-color: #f4ecd0; /* cor secundária */
-    padding: 25px 0;
-}
-
-.caixa {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo a img {
-    max-width: 200px;
-    height: auto;
+  background: #f8f8f8;
+  padding: 15px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-nav a {
-    text-transform: uppercase;
-    color: #655e5e;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+  transition: 0.3s;
 }
 
-nav a:hover,
-nav a.ativo {
-    color: #b2b09b; /* destaque */
+nav ul li a:hover {
+  color: #b48c8c;
 }
 
-/* Banner */
-.banner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+/* BANNER */
+.banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: block;
 }
 
-.banner {
-    width: 100%;
-    height: auto; /* mantém proporção */
-    max-height: 450px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+/* VÍDEO */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
 }
 
-/* Seções principais */
-.principal {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fffdf7;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.video-container iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 20px;
+  border: none;
 }
 
-.titulo-principal {
-    font-family: 'Amoria', cursive;
-    font-size: 2.5em;
-    margin-bottom: 25px;
+/* SEÇÕES */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-/* Cards de procedimentos */
-.procedimentos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
+section h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #444;
 }
 
-.card {
-    background-color: #f4ecd0;
-    width: 220px;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+section p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
 }
 
-.card img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
+/* FORMULÁRIO */
+form input, form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+form button {
+  background: #b48c8c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-/* Botões circulares "Agende Agora" */
-.btn-agendar {
-    background-color: #b2b09b; /* cor destaque */
-    color: #fffdf7;
-    padding: 18px 40px;
-    border-radius: 50px; /* circular/oval */
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    display: inline-block;
-    margin-top: 20px;
+form button:hover {
+  background: #a07a7a;
 }
 
-.btn-agendar:hover {
-    background-color: #655e5e;
-    transform: scale(1.1);
-}
-
-/* Vídeo centralizado */
-.video {
-    max-width: 720px;
-    margin: 40px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.video iframe {
-    width: 100%;
-    height: 405px;
-    border: none;
-}
-
-/* Mapa centralizado */
-.mapa-conteudo {
-    width: 100%;
-    max-width: 940px;
-    margin: 30px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.mapa-conteudo iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-    border-radius: 15px;
-}
-
-/* Rodapé */
+/* RODAPÉ */
 footer {
-    background-color: #f4ecd0;
-    padding: 50px 20px;
-    text-align: center;
-    color: #655e5e;
+  background: #f1f1f1;
+  padding: 20px;
+  margin-top: 40px;
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .card {
-        width: 180px;
-        padding: 15px;
-    }
-
-    .banner {
-        max-height: 300px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
+footer img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
 }

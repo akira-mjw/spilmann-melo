@@ -1,19 +1,19 @@
-/* FONTES: Amoria para títulos, Apple Garamond para corpo */
-@import url('https://fonts.googleapis.com/css2?family=Amoria&display=swap');
+/* FONTES: Títulos elegantes e corpo serifado */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
 body {
-    font-family: 'Apple Garamond', serif;
-    font-style: italic;
+    font-family: 'Roboto', serif;
+    font-style: normal;
     background-color: #fffdf7; /* cor principal */
     color: #655e5e; /* cor da letra */
     margin: 0;
     padding: 0;
-    text-align: center; /* todo texto centralizado */
+    text-align: center;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #f4ecd0; /* cor secundária */
+    background-color: #f4ecd0;
     padding: 25px 0;
 }
 
@@ -26,15 +26,10 @@ header {
     gap: 15px;
 }
 
-.logo a {
-    text-decoration: none;
-    font-family: 'Amoria', cursive;
-    font-size: 36px;
-    font-weight: bold;
-    color: #655e5e;
+.logo img {
+    max-width: 180px;
 }
 
-/* Navegação centralizada */
 nav ul {
     list-style: none;
     display: flex;
@@ -47,14 +42,14 @@ nav ul {
 nav a {
     text-transform: uppercase;
     color: #655e5e;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #b2b09b; /* destaque */
+    color: #b2b09b;
 }
 
 /* Banner */
@@ -80,12 +75,12 @@ nav a:hover {
 
 /* Títulos importantes */
 .titulo-principal {
-    font-family: 'Amoria', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     margin-bottom: 25px;
 }
 
-/* Cards de procedimentos (circulares) */
+/* Cards de procedimentos */
 .procedimentos-grid,
 .conteudo-beneficios {
     display: flex;
@@ -99,7 +94,7 @@ nav a:hover {
     background-color: #f4ecd0;
     width: 220px;
     height: 220px;
-    border-radius: 50%; /* totalmente circular */
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +105,13 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+.card img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
 .card:hover,
 .itens-beneficio:hover {
     transform: translateY(-8px);
@@ -118,10 +120,10 @@ nav a:hover {
 
 /* Botões circulares "Agende Agora" */
 .btn-agendar {
-    background-color: #b2b09b; /* cor destaque */
+    background-color: #b2b09b;
     color: #fffdf7;
     padding: 18px 40px;
-    border-radius: 50px; /* circular/oval */
+    border-radius: 50px;
     border: none;
     font-size: 18px;
     font-weight: bold;
@@ -134,6 +136,42 @@ nav a:hover {
 .btn-agendar:hover {
     background-color: #655e5e;
     transform: scale(1.1);
+}
+
+/* Formulários elegantes */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.formulario label {
+    font-weight: 500;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #b2b09b;
+    box-shadow: 0 0 8px rgba(178,176,155,0.5);
 }
 
 /* Vídeo centralizado */

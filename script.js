@@ -27,4 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
             formAgendamento.reset();
         });
     }
+
+    // Formulário de login (se existir)
+    const formLogin = document.getElementById("formLogin");
+    if(formLogin){
+        formLogin.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Login efetuado com sucesso!");
+            formLogin.reset();
+        });
+    }
 });

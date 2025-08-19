@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spilmann Melo - Estética</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <!-- Fonte parecida com a referência -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Clínica Spilmann Melo - Estética</title>
 </head>
-<body>
 
-  <!-- Cabeçalho -->
+<body>
   <header>
-    <div class="logo">
-      <img src="imagens/logo.png" alt="Logo Spilmann Melo">
+    <div class="caixa">
+      <h1 class="logo"><img src="img/logo.png" alt="Logo Clínica Spilmann Melo"></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="procedimentos.html">Procedimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#procedimentos">Procedimentos</a></li>
-        <li><a href="#agendamento">Agendamento</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <a href="#agendamento" class="btn-header">Agendar Online</a>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-texto">
-      <h1>Sua jornada de bem-estar começa agora!</h1>
-      <p>Na Spilmann Melo oferecemos os melhores tratamentos de estética e bem-estar para valorizar a sua beleza natural.</p>
-      <a href="#agendamento" class="btn-hero">Agendar tratamento</a>
-    </div>
-  </section>
+  <img class="banner" src="img/banner.jpg" alt="Banner da clínica">
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
-    <h2>Sobre Nós</h2>
-    <p>A Spilmann Melo é especializada em procedimentos estéticos modernos, seguros e eficazes. Nossa missão é promover saúde, confiança e bem-estar.</p>
-  </section>
+  <main>
+    <section class="principal">
+      <h2 class="titulo-principal">Sobre a Clínica</h2>
 
-  <!-- Procedimentos -->
-  <section id="procedimentos" class="procedimentos">
-    <h2>Procedimentos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Botox</h3>
-        <p>Rejuvenescimento facial com aplicação segura e eficaz.</p>
+      <img src="img/utensilios.jpg" alt="Equipamentos de estética" class="utensilios">
+
+      <p>Localizada no coração da cidade, a <strong>Clínica Spilmann Melo</strong> oferece os mais modernos
+        tratamentos de estética facial e corporal.</p>
+
+      <p id="missao"><em>Nossa missão é: <strong>"Proporcionar autoestima e qualidade de vida através do cuidado
+              estético"</strong>.</em></p>
+
+      <p>Contamos com profissionais especializados e tecnologia avançada, garantindo excelência e satisfação em cada
+        procedimento.</p>
+
+      <button class="botao-agendar" onclick="window.location.href='contato.html'">Agende Agora</button>
+    </section>
+
+    <section class="beneficios">
+      <h3 class="titulo-principal">Benefícios</h3>
+
+      <div class="conteudo-beneficios">
+        <ul class="lista-beneficios">
+          <li class="itens">Atendimento humanizado</li>
+          <li class="itens">Ambiente confortável</li>
+          <li class="itens">Tecnologia moderna</li>
+          <li class="itens">Profissionais qualificados</li>
+          <li class="itens">Segurança e higiene</li>
+        </ul>
+        <img src="img/beneficios.jpg" alt="Benefícios" class="imagem-beneficios">
       </div>
-      <div class="card">
-        <h3>Preenchimento</h3>
-        <p>Harmonização facial para realçar sua beleza.</p>
-      </div>
-      <div class="card">
-        <h3>Peeling</h3>
-        <p>Tratamento para renovação celular e pele mais jovem.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Agendamento -->
-  <section id="agendamento" class="agendamento">
-    <h2>Agende seu tratamento</h2>
-    <form>
-      <input type="text" placeholder="Nome" required>
-      <input type="email" placeholder="E-mail" required>
-      <input type="tel" placeholder="Telefone" required>
-      <select required>
-        <option value="">Selecione o procedimento</option>
-        <option>Botox</option>
-        <option>Preenchimento</option>
-        <option>Peeling</option>
-      </select>
-      <button type="submit">Agendar</button>
-    </form>
-  </section>
+      <div class="video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer id="contato">
-    <p>© 2025 Spilmann Melo - Todos os direitos reservados</p>
-    <p>Contato: contato@spilmannmelo.com | (41) 99999-9999</p>
+    <section class="mapa">
+      <h3 class="titulo-principal">Nosso espaço</h3>
+      <p>Venha nos conhecer, estamos no coração da cidade.</p>
+
+      <div class="mapa-conteudo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..."
+          width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="img/logo-branco.png" alt="Logo da Clínica">
+    <p class="copyright">&copy; 2025 Clínica Spilmann Melo - Estética</p>
   </footer>
-
 </body>
+
 </html>

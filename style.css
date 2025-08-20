@@ -64,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #e077a7;
+  color: #cba72c;
 }
 
 /* HERO */
@@ -120,7 +120,7 @@ nav a:hover {
 .about-text h3 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1.5em;
-  color: #e077a7;
+  color: #cba72c;
 }
 
 .about-text p {
@@ -129,7 +129,7 @@ nav a:hover {
 
 /* CTA */
 .cta-section {
-  background-color: #e077a7;
+  background-color: #cba72c;
   color: white;
   text-align: center;
   padding: 5% 0;
@@ -143,7 +143,7 @@ nav a:hover {
 .cta-button {
   display: inline-block;
   background-color: #fff;
-  color: #e077a7;
+  color: #cba72c;
   padding: 0.75em 2em;
   border-radius: 0.3em;
   font-weight: bold;
@@ -163,7 +163,7 @@ nav a:hover {
 .services-section h2 {
   font-size: clamp(2rem, 5vw, 2.5rem);
   margin-bottom: 2em;
-  color: #e077a7;
+  color: #cba72c;
 }
 
 .services-grid {
@@ -193,7 +193,7 @@ nav a:hover {
 .service-card h3 {
   font-size: 1.5em;
   padding: 1.25em 1em 0.625em;
-  color: #e077a7;
+  color: #cba72c;
 }
 
 .service-card p {
@@ -210,7 +210,7 @@ nav a:hover {
   text-align: center;
   font-size: clamp(2rem, 5vw, 2.5rem);
   margin-bottom: 2em;
-  color: #e077a7;
+  color: #cba72c;
 }
 
 .contact-content {
@@ -241,7 +241,7 @@ form textarea {
 }
 
 .submit-button {
-  background-color: #e077a7;
+  background-color: #cba72c;
   color: white;
   padding: 0.75em 1.25em;
   border: none;
@@ -253,7 +253,7 @@ form textarea {
 }
 
 .submit-button:hover {
-  background-color: #d25a8e;
+  background-color: #cba72c;
 }
 
 .map-container {
@@ -266,12 +266,12 @@ form textarea {
 
 .map-container h3 {
   margin-bottom: 1em;
-  color: #e077a7;
+  color: #cba72c;
 }
 
 /* FOOTER */
 footer {
-  background-color: #e077a7;
+  background-color: #cba72c;
   color: white;
   text-align: center;
   padding: 2% 0;

@@ -1,243 +1,150 @@
-/* =========================
-   FONTES
-========================= */
-@import url('https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap');
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Corpo do site */
+/* Fonte */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fffdf7;
-    color: #655e5e;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fdfbf7;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* =========================
-   CABEÇALHO
-========================= */
+/* Cabeçalho */
 header {
-    background-color: #f4ecd0;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #f8f4ec;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+header .logo img {
+  height: 60px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.btn-header {
+  background: #a5a58d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.caixa {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Hero */
+.hero {
+  background: url('https://images.pexels.com/photos/3373742/pexels-photo-3373742.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 100px;
+  color: #333;
+}
+.hero-texto {
+  max-width: 500px;
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+  border-radius: 12px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 15px 0;
+}
+.btn-hero {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #a5a58d;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.logo img {
-    width: 180px;
-    height: auto;
+/* Sobre */
+.sobre {
+  padding: 50px;
+  text-align: center;
+}
+.sobre h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    padding: 0;
-    margin: 15px 0 0 0;
-    justify-content: center;
+/* Procedimentos */
+.procedimentos {
+  padding: 50px;
+  background: #f8f4ec;
+  text-align: center;
 }
-
-nav a {
-    text-transform: uppercase;
-    color: #655e5e;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.procedimentos h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
 }
-
-nav a:hover {
-    color: #b2b09b;
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-
-/* =========================
-   BANNER
-========================= */
-.banner {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-}
-
-/* =========================
-   PRINCIPAL
-========================= */
-.principal {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fffdf7;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    text-align: center;
-}
-
-.titulo-principal {
-    font-family: 'Amoria', cursive;
-    font-size: 2.5em;
-    margin-bottom: 25px;
-}
-
-/* =========================
-   CARDS DE PROCEDIMENTOS
-========================= */
-.procedimentos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
 .card {
-    background-color: #f4ecd0;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
 }
 
-.card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
+/* Agendamento */
+.agendamento {
+  padding: 50px;
+  text-align: center;
+}
+.agendamento h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+.agendamento form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+.agendamento input, .agendamento select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.agendamento button {
+  background: #a5a58d;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-/* =========================
-   BOTÕES
-========================= */
-button, .btn-agendar {
-    background-color: #b2b09b;
-    color: #fffdf7;
-    padding: 15px 40px;
-    border-radius: 50px;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover, .btn-agendar:hover {
-    background-color: #655e5e;
-    transform: scale(1.1);
-}
-
-/* =========================
-   FORMULÁRIOS
-========================= */
-.formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #b2b09b;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-textarea {
-    resize: none;
-}
-
-/* =========================
-   VÍDEO
-========================= */
-.video {
-    max-width: 720px;
-    margin: 40px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.video iframe {
-    width: 100%;
-    height: 405px;
-    border: none;
-}
-
-/* =========================
-   MAPA
-========================= */
-.mapa-conteudo {
-    width: 100%;
-    max-width: 940px;
-    margin: 30px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.mapa-conteudo iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-}
-
-/* =========================
-   RODAPÉ
-========================= */
+/* Rodapé */
 footer {
-    background-color: #f4ecd0;
-    padding: 30px 20px;
-    text-align: center;
-    color: #655e5e;
-}
-
-footer img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-@media screen and (max-width: 768px) {
-    .card {
-        width: 180px;
-        height: 180px;
-    }
-
-    .banner {
-        max-height: 250px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }

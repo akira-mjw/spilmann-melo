@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spilmann Melo - Home</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style-home.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Estética Spilmann</title>
 </head>
+
 <body>
-  <header>
-    <div class="caixa">
-      <div class="logo">
-        <img src="logo.png" alt="Logo Spilmann Melo">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="ativo">Home</a></li>
-          <li><a href="pages/procedimentos.html">Procedimentos</a></li>
-          <li><a href="pages/agendamento.html">Agendamento</a></li>
-          <li><a href="pages/contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+	<header>
+		<div class="caixa">
+			<h1 class="logo">
+				<img class="titulo-principal" src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética Spilmann">
+				Estética Spilmann
+			</h1>
 
-  <main>
-    <img src="banner.jpg" alt="Banner" class="banner">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Procedimentos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-    <section class="principal">
-      <h1 class="titulo-principal">Bem-vindo(a) à Spilmann Melo Estética</h1>
-      <p>Oferecemos os melhores tratamentos de beleza com profissionalismo e carinho.</p>
-    </section>
+	<img class="banner" src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20banner%20github.png" alt="Banner Estética">
 
-    <section class="procedimentos-grid">
-      <div class="card">
-        <img src="procedimento1.jpg" alt="Procedimento 1">
-        <h3>Procedimento 1</h3>
-        <p>Descrição curta do procedimento 1.</p>
-      </div>
-      <div class="card">
-        <img src="procedimento2.jpg" alt="Procedimento 2">
-        <h3>Procedimento 2</h3>
-        <p>Descrição curta do procedimento 2.</p>
-      </div>
-      <div class="card">
-        <img src="procedimento3.jpg" alt="Procedimento 3">
-        <h3>Procedimento 3</h3>
-        <p>Descrição curta do procedimento 3.</p>
-      </div>
-    </section>
+	<main>
+		<section class="principal">
+			<h2 class="titulo-principal">Sobre a Estética Spilmann</h2>
 
-    <section class="video">
-      <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" title="Vídeo de apresentação" allowfullscreen></iframe>
-    </section>
-  </main>
+			<img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20cabelo%20github.jpg" alt="Tratamentos de cabelo" class="utensilios">
 
-  <footer>
-    <div class="rodape-container">
-      <img src="logo.png" alt="Logo Rodapé">
-      <p>&copy; 2025 Spilmann Melo Estética. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+			<p>Localizada no coração da cidade, a <strong>Estética Spilmann</strong> oferece tratamentos de beleza e bem-estar com excelência e sofisticação. Desde 2019, proporcionamos aos nossos clientes resultados de alta qualidade.</p>
+
+			<p id="missao"><em>Nossa missão é: <strong>"Valorizar sua autoestima e cuidar da sua saúde e beleza"</strong>.</em></p>
+
+			<p>Trabalhamos com profissionais qualificados e produtos de ponta, garantindo resultados confiáveis e atendimento personalizado.</p>
+		</section>
+
+		<section class="beneficios">
+			<h3 class="titulo-principal">Benefícios</h3>
+
+			<div class="conteudo-beneficios">
+				<ul class="lista-beneficios">
+					<li class="itens">Atendimento Personalizado</li>
+					<li class="itens">Espaço Confortável</li>
+					<li class="itens">Localização Privilegiada</li>
+					<li class="itens">Profissionais Qualificados</li>
+					<li class="itens">Pontualidade</li>
+					<li class="itens">Higiene e Limpeza</li>
+				</ul>
+				<img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20seringas%20github.png" class="imagem-beneficios" alt="Benefícios Estética">
+			</div>
+
+			<div class="video">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section class="mapa">
+			<h3 class="titulo-principal">Nosso estabelecimento</h3>
+			<p>Nosso espaço está localizado no coração da cidade, proporcionando conforto e praticidade aos clientes.</p>
+
+			<div class="mapa-conteudo">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</section>
+	</main>
+
+	<footer style="background: url('https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/textura%20github.jpg'); color:#fff;">
+		<img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética">
+		<p class="copyright">&copy; Copyright Estética Spilmann - 2025</p>
+	</footer>
 </body>
+
 </html>

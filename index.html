@@ -1,96 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Estética Bela Pele</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style-home.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Spilmann Melo - Estética</title>
-</head>
-
-<body>
+  <body>
+    <!-- Cabeçalho -->
     <header>
-        <div class="caixa">
-            <h1 class="logo">
-                <img class="titulo-principal" src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética"> Spilmann Melo - Estética
-            </h1>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Procedimentos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo-link" aria-label="Página inicial">
+          <img
+            src="img/logo.png"
+            alt="Logo da Estética Bela Pele"
+            class="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <img class="banner" src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20banner%20github.png" alt="Banner Estética">
-
+    <!-- Conteúdo principal -->
     <main>
-        <p>Seja bem-vindo(a) à nossa clínica de estética, onde beleza e cuidado caminham juntos.</p>
+      <!-- Seção de destaque -->
+      <section class="hero-section">
+        <img
+          src="img/banner.jpeg"
+          alt="Banner de Estética Bela Pele"
+          class="hero-img"
+        />
+        <div class="hero-text">
+          <h2>Cuidando da sua beleza e bem-estar</h2>
+          <p>
+            Nossa missão é proporcionar uma experiência de cuidado completa, que
+            eleva a sua autoestima e realça a sua beleza natural.
+          </p>
+        </div>
+      </section>
 
-        <section class="principal">
-            <h2 class="titulo-principal">Sobre a Spilmann Melo - Estética</h2>
-
-            <img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20cabelo%20github.jpg" alt="Tratamento de cabelo" class="utensilios">
-
-            <p>Localizada no coração da cidade, a <strong>Spilmann Melo - Estética</strong> oferece serviços
-                de alta qualidade para cuidados corporais e faciais. Nossa equipe prioriza bem-estar e resultados
-                naturais.</p>
-
-            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar confiança e autoestima aos clientes"</strong>.</em></p>
-
-            <p>Oferecemos profissionais especializados, utilizando técnicas modernas e produtos de confiança para
-                garantir sua satisfação.</p>
-        </section>
-
-        <section class="beneficios">
-            <h3 class="titulo-principal">Benefícios</h3>
-
-            <div class="conteudo-beneficios">
-                <ul class="lista-beneficios">
-                    <li class="itens">Atendimento Personalizado</li>
-                    <li class="itens">Ambiente Aconchegante</li>
-                    <li class="itens">Localização Privilegiada</li>
-                    <li class="itens">Profissionais Especializados</li>
-                    <li class="itens">Agendamento Flexível</li>
-                    <li class="itens">Higiene e Segurança</li>
-                </ul>
-                <img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20seringas%20github.png" class="imagem-beneficios" alt="Benefícios Estética">
+      <!-- Seção sobre -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Sobre Nós</h3>
+              <p>
+                Fundada com a paixão por beleza e cuidado, a Estética Bela Pele
+                oferece um ambiente tranquilo e acolhedor para que você possa
+                relaxar e se reconectar consigo mesma.
+              </p>
+              <p>
+                Nossos profissionais são altamente qualificados e utilizam as
+                técnicas mais modernas do mercado para garantir os melhores
+                resultados.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="video">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
-        <section class="mapa">
-            <h3 class="titulo-principal">Nosso estabelecimento</h3>
-            <p>Nosso espaço está localizado no coração da cidade, com fácil acesso e conforto.</p>
-
-            <div class="mapa-conteudo">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr"
-                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="">
-                </iframe>
-            </div>
-        </section>
+      <!-- Seção de chamada para ação -->
+      <section class="cta-section">
+        <div class="container">
+          <h2>Marque sua consulta hoje mesmo!</h2>
+          <a href="contato.html" class="cta-button">Agendar agora</a>
+        </div>
+      </section>
     </main>
 
+    <!-- Rodapé -->
     <footer>
-        <img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética">
-        <p class="copyright">&copy; Copyright Spilmann Melo - Estética - 2025</p>
+      <div class="container">
+        <p>© 2024 Estética Bela Pele. Todos os direitos reservados.</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

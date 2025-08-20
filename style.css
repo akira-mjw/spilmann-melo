@@ -1,253 +1,308 @@
-/* Fonte principal */
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fffdf7;
-    color: #304543;
-    line-height: 1.6;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+  font-size: 1rem;
 }
 
-/* Header */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* HEADER */
 header {
-    background: #cba72c;
-    padding: 20px 0;
+  background-color: #fff;
+  padding: 2% 0;
+  box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
 }
 
-.caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
+.logo {
+  width: 60%;
+  max-width: 150px;
 }
 
-nav li {
-    display: inline;
-    margin-left: 15px;
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
 nav a {
-    text-transform: uppercase;
-    color: #304543;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #fffdf7;
-    text-decoration: underline;
+  color: #e077a7;
 }
 
-/* Banner */
-.banner {
-    width: 100%;
-    display: block;
+/* HERO */
+.hero-section {
+  position: relative;
+  color: white;
+  text-align: center;
 }
 
-/* Principal */
-.principal {
-    padding: 3em 0;
-    background: #fffdf7;
-    width: 940px;
-    margin: 0 auto;
+.hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(0.7);
 }
 
-.principal p {
-    margin: 0 0 1em;
-    text-align: center;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
-.principal strong {
-    font-weight: bold;
-    color: #cba72c;
+.hero-text h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1em;
 }
 
-.principal em {
-    font-style: italic;
+.hero-text p {
+  font-size: 1.2em;
 }
 
-/* Imagens */
-.utensilios {
-    width: 40%;
-    float: left;
-    margin: 0 20px 20px 0;
+/* ABOUT */
+.about-section {
+  padding: 6% 0;
+  background-color: #fff;
 }
 
-.imagembeneficios {
-    width: 60%;
-    box-shadow: 10px 10px 10px 0 #000000;
-    transition: 400ms;
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  flex-wrap: wrap;
 }
 
-.imagembeneficios:hover {
-    opacity: 0.7;
+.about-content img {
+  width: 45%;
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-/* Benefícios */
-.beneficios {
-    padding: 3em 0;
-    background: #fffdf7;
+.about-text h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1.5em;
+  color: #e077a7;
 }
 
-.lista-beneficios {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+.about-text p {
+  margin-bottom: 1em;
 }
 
-.itens {
-    line-height: 1.5;
-    font-style: italic;
+/* CTA */
+.cta-section {
+  background-color: #e077a7;
+  color: white;
+  text-align: center;
+  padding: 5% 0;
 }
 
-.itens:first-child {
-    font-weight: bold;
+.cta-section h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 1.5em;
 }
 
-.itens:before {
-    content: "✔️ ";
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #e077a7;
+  padding: 0.75em 2em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-/* Formulário */
-form {
-    margin: 40px 0;
+.cta-button:hover {
+  background-color: #f0f0f0;
 }
 
-form label,
-form legend {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 10px;
+/* SERVICES */
+.services-section {
+  padding: 6% 0;
+  text-align: center;
 }
 
-form input, .input-padrao, form select, form textarea {
-    display: block;
-    margin-bottom: 20px;
-    padding: 10px 25px;
-    width: 50%;
-    border: 1px solid #304543;
-    border-radius: 5px;
+.services-section h2 {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 2em;
+  color: #e077a7;
 }
 
-.checkbox {
-    margin: 20px 0;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
 }
 
-/* Botão enviar */
-.enviar {
-    width: 40%;
-    padding: 15px 0;
-    background: #cba72c;
-    color: #fffdf7;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s all;
+.service-card {
+  background-color: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
-.enviar:hover {
-    background: #b19122;
-    transform: scale(1.05);
+.service-card:hover {
+  transform: translateY(-0.625em);
 }
 
-/* Tabela */
-table {
-    margin: 20px auto 40px;
-    border-collapse: collapse;
-    width: 80%;
+.service-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-thead {
-    background: #cba72c;
-    color: #fffdf7;
-    font-weight: bold;
+.service-card h3 {
+  font-size: 1.5em;
+  padding: 1.25em 1em 0.625em;
+  color: #e077a7;
 }
 
-td, th {
-    border: 1px solid #304543;
-    padding: 8px 15px;
-    text-align: center;
+.service-card p {
+  padding: 0 1em 1.25em;
+  color: #555;
 }
 
-/* Mapa */
-.mapa {
-    padding: 3em 0;
-    background: #fffdf7;
+/* CONTACT */
+.contact-section {
+  padding: 6% 0;
 }
 
-.mapa p {
-    text-align: center;
-    margin-bottom: 2em;
+.contact-section h2 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 2em;
+  color: #e077a7;
 }
 
-.mapa-conteudo {
-    width: 940px;
-    margin: 0 auto;
+.contact-content {
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
 }
 
-/* Vídeo */
-.video {
-    width: 560px;
-    margin: 2em auto;
+.contact-content form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Footer */
+form label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.625em;
+  margin-bottom: 1.25em;
+  border: 1px solid #ddd;
+  border-radius: 0.3em;
+}
+
+.submit-button {
+  background-color: #e077a7;
+  color: white;
+  padding: 0.75em 1.25em;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #d25a8e;
+}
+
+.map-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.25em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.map-container h3 {
+  margin-bottom: 1em;
+  color: #e077a7;
+}
+
+/* FOOTER */
 footer {
+  background-color: #e077a7;
+  color: white;
+  text-align: center;
+  padding: 2% 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 4%;
+  }
+
+  header .container {
+    flex-direction: column;
     text-align: center;
-    background: #cba72c url("https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/textura%20github.jpg");
-    background-size: cover;
-    padding: 40px 0;
-}
+  }
 
-footer img {
-    width: 120px;
-}
+  nav ul {
+    justify-content: center;
+    margin-top: 1em;
+  }
 
-.copyright {
-    color: #fffdf7;
-    font-size: 13px;
-    margin-top: 20px;
-}
+  .about-content img {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
 
-/* Responsivo */
-@media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-        width: auto;
-    }
+  .hero-text h2 {
+    font-size: 2em;
+  }
 
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-
-    .lista-beneficios, .imagem-beneficios {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .utensilios {
-        width: 100%;
-        float: none;
-        margin: 0 0 20px 0;
-    }
-
-    form input, .input-padrao, form select, form textarea {
-        width: 100%;
-    }
-
-    .enviar {
-        width: 100%;
-    }
+  .map-container {
+    margin-top: 2em;
+  }
 }

@@ -1,25 +1,64 @@
-<header>
-  <div class="caixa">
-    <div class="logo">
-      <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spilmann Melo - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="caixa">
+      <div class="logo">
+        <img src="logo.png" alt="Logo Spilmann Melo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="pages/procedimentos.html">Procedimentos</a></li>
+          <li><a href="pages/agendamento.html">Agendamento</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="procedimentos.html">Procedimentos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<!-- Banner -->
-<img class="banner" src="img/imagem banner github.png" alt="Banner da Clínica">
+  <main>
+    <img src="banner.jpg" alt="Banner" class="banner">
 
-<main>
-  <section class="principal">
-    <h2 class="titulo-principal">Bem-vindo à Clínica Estética</h2>
-    <p>Proporcionamos cuidado, bem-estar e autoestima com os melhores tratamentos estéticos da região.</p>
-    <a href="agendamento.html" class="btn-agendar">Agende Agora</a>
-  </section>
-</main>
+    <section class="principal">
+      <h1 class="titulo-principal">Bem-vindo(a) à Spilmann Melo Estética</h1>
+      <p>Oferecemos os melhores tratamentos de beleza com profissionalismo e carinho.</p>
+    </section>
+
+    <section class="procedimentos-grid">
+      <div class="card">
+        <img src="procedimento1.jpg" alt="Procedimento 1">
+        <h3>Procedimento 1</h3>
+        <p>Descrição curta do procedimento 1.</p>
+      </div>
+      <div class="card">
+        <img src="procedimento2.jpg" alt="Procedimento 2">
+        <h3>Procedimento 2</h3>
+        <p>Descrição curta do procedimento 2.</p>
+      </div>
+      <div class="card">
+        <img src="procedimento3.jpg" alt="Procedimento 3">
+        <h3>Procedimento 3</h3>
+        <p>Descrição curta do procedimento 3.</p>
+      </div>
+    </section>
+
+    <section class="video">
+      <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" title="Vídeo de apresentação" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape-container">
+      <img src="logo.png" alt="Logo Rodapé">
+      <p>&copy; 2025 Spilmann Melo Estética. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

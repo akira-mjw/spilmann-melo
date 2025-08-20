@@ -3,51 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Spilmann Melo</title>
-  <link rel="stylesheet" href="../style.css">
-  <script defer src="../script.js"></script>
+  <title>Login - Clínica Estética</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="caixa">
-      <div class="logo">
-        <img src="../logo.png" alt="Logo Spilmann Melo">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="procedimentos.html">Procedimentos</a></li>
-          <li><a href="agendamento.html">Agendamento</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+      <h1 class="logo"><a href="index.html">Clínica Estética</a></h1>
     </div>
   </header>
 
-  <main>
-    <section class="principal">
-      <h1 class="titulo-principal">Área de Login</h1>
-      <p>Faça login para acessar recursos exclusivos.</p>
-
-      <form id="formLogin" class="formulario">
-        <label for="usuario">Usuário:</label>
-        <input type="text" id="usuario" name="usuario" required>
-
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-
-        <button type="submit" class="btn-agendar">Entrar</button>
-      </form>
-
-      <p class="cadastro-link">Não tem conta? <a href="contato.html">Entre em contato para criar</a></p>
-    </section>
+  <main class="principal">
+    <h2 class="titulo-principal">Área de Login</h2>
+    <form id="formLogin" class="formulario">
+      <label>E-mail:</label>
+      <input type="email" required>
+      <label>Senha:</label>
+      <input type="password" required>
+      <button type="submit" class="btn-agendar">Entrar</button>
+    </form>
   </main>
 
   <footer>
-    <div class="rodape-container">
-      <img src="../logo.png" alt="Logo Rodapé">
-      <p>&copy; 2025 Spilmann Melo Estética. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 Clínica Estética</p>
   </footer>
 </body>
 </html>

@@ -1,44 +1,51 @@
-<header>
-  <div class="caixa">
-    <div class="logo">
-      <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento - Clínica Estética</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="caixa">
+      <h1 class="logo"><a href="index.html">Clínica Estética</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="procedimentos.html">Procedimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="agendamento.html" class="ativo">Agende Agora</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="procedimentos.html">Procedimentos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="principal">
-  <h2 class="titulo-principal">Agende seu Horário</h2>
-  <form id="formAgendamento" class="formulario">
-    <label for="nome">Nome completo:</label>
-    <input type="text" id="nome" name="nome" required>
+  <main class="principal">
+    <h2 class="titulo-principal">Agende seu Horário</h2>
+    <form id="formAgendamento" class="formulario">
+      <label>Nome completo:</label>
+      <input type="text" required>
+      <label>Telefone/WhatsApp:</label>
+      <input type="tel" required>
+      <label>Procedimento:</label>
+      <select required>
+        <option value="">Selecione</option>
+        <option>Botox</option>
+        <option>Preenchimento</option>
+        <option>Limpeza de Pele</option>
+      </select>
+      <label>Data:</label>
+      <input type="date" required>
+      <label>Horário:</label>
+      <input type="time" required>
+      <button type="submit" class="btn-agendar">Agendar</button>
+    </form>
+  </main>
 
-    <label for="telefone">Telefone/WhatsApp:</label>
-    <input type="tel" id="telefone" name="telefone" required>
-
-    <label for="procedimento">Procedimento desejado:</label>
-    <select id="procedimento" name="procedimento" required>
-      <option value="">Selecione</option>
-      <option>Botox</option>
-      <option>Preenchimento Facial</option>
-      <option>Limpeza de Pele</option>
-      <option>Peeling Químico</option>
-      <option>Microagulhamento</option>
-      <option>Drenagem Linfática</option>
-    </select>
-
-    <label for="data">Data preferida:</label>
-    <input type="date" id="data" name="data" required>
-
-    <label for="hora">Horário preferido:</label>
-    <input type="time" id="hora" name="hora" required>
-
-    <button type="submit" class="btn-agendar">Agendar agora</button>
-  </form>
-</main>
+  <footer>
+    <p>&copy; 2025 Clínica Estética</p>
+  </footer>
+</body>
+</html>

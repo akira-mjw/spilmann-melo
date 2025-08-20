@@ -1,63 +1,88 @@
 body {}
 
-#banner { width: 100%; }
+#banner {
+    width: 100%;
+}
 
 .principal {
-	background: #CCCCCC;
-	padding: 30px;
+    background: #fffdf7;
+    padding: 30px;
 }
 
 .logo {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
 }
 
 .titulo-principal {
-	padding-left: 20px;
-	height: 15vw;
+    padding-left: 20px;
+    height: auto;
+    text-align: center;
 }
 
-.titulo-centralizado { text-align: center; }
+.titulo-centralizado {
+    text-align: center;
+}
 
-p { text-align: center; }
+p {
+    text-align: center;
+}
 
-#missao { font-size: 20px; }
+#missao {
+    font-size: 20px;
+}
 
-em strong { color: #FF0000; }
+em strong {
+    color: #cba72c;
+}
 
-.itens { font-style: italic; }
+.itens {
+    font-style: italic;
+}
 
-.beneficios { background: #FFFFFF; padding: 20px; }
+.beneficios {
+    background: #fffdf7;
+    padding: 20px;
+}
 
 .beneficios ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-right: 15%;
 }
 
-.imagembeneficios { width: 50%; }
+.imagembeneficios {
+    width: 50%;
+}
 
-header { background: #BBBBBB; padding: 20px 0; }
+/* Pequenos ajustes */
+header {
+    background: #cba72c;
+    padding: 20px 0;
+}
 
 .caixa {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav li { display: inline; margin: 0 0 0 15px; }
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
 
 nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
+    text-transform: uppercase;
+    color: #304543;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }

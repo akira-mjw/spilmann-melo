@@ -1,23 +1,21 @@
-/* ===================== FONTES ===================== */
-@import url('https://fonts.googleapis.com/css2?family=Amoria&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* =========================
+   FONTES
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Amoria&family=Roboto&display=swap');
 
-/* ===================== RESET ===================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===================== BODY ===================== */
+/* Corpo do site */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fffdf7;
     color: #655e5e;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-/* ===================== CABEÇALHO ===================== */
+/* =========================
+   CABEÇALHO
+========================= */
 header {
     background-color: #f4ecd0;
     padding: 20px 0;
@@ -29,7 +27,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
 
 .logo img {
@@ -40,16 +37,18 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
+    padding: 0;
+    margin: 15px 0 0 0;
     justify-content: center;
 }
 
 nav a {
     text-transform: uppercase;
     color: #655e5e;
-    font-weight: 700;
-    text-decoration: none;
+    font-weight: bold;
     font-size: 18px;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -57,18 +56,21 @@ nav a:hover {
     color: #b2b09b;
 }
 
-/* ===================== BANNER ===================== */
+/* =========================
+   BANNER
+========================= */
 .banner {
     width: 100%;
-    max-height: 450px;
+    max-height: 400px;
     object-fit: cover;
     display: block;
     margin: 20px auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* ===================== PRINCIPAL ===================== */
+/* =========================
+   PRINCIPAL
+========================= */
 .principal {
     max-width: 1000px;
     margin: 40px auto;
@@ -82,53 +84,13 @@ nav a:hover {
 .titulo-principal {
     font-family: 'Amoria', cursive;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-/* ===================== FORMULÁRIOS ===================== */
-.formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 450px;
-    margin: 20px auto;
-    text-align: left;
-}
-
-.formulario label {
-    font-weight: 500;
-}
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 1px solid #d6d1c4;
-    font-size: 16px;
-    width: 100%;
-}
-
-.formulario button {
-    background-color: #b2b09b;
-    color: #fffdf7;
-    padding: 15px 30px;
-    border-radius: 50px;
-    border: none;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.formulario button:hover {
-    background-color: #655e5e;
-    transform: scale(1.05);
-}
-
-/* ===================== CARDS ===================== */
-.procedimentos-grid,
-.conteudo-beneficios {
+/* =========================
+   CARDS DE PROCEDIMENTOS
+========================= */
+.procedimentos-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,17 +106,17 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .card:hover {
@@ -162,7 +124,57 @@ nav a:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ===================== VÍDEO ===================== */
+/* =========================
+   BOTÕES
+========================= */
+button, .btn-agendar {
+    background-color: #b2b09b;
+    color: #fffdf7;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn-agendar:hover {
+    background-color: #655e5e;
+    transform: scale(1.1);
+}
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #b2b09b;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+/* =========================
+   VÍDEO
+========================= */
 .video {
     max-width: 720px;
     margin: 40px auto;
@@ -177,7 +189,9 @@ nav a:hover {
     border: none;
 }
 
-/* ===================== MAPA ===================== */
+/* =========================
+   MAPA
+========================= */
 .mapa-conteudo {
     width: 100%;
     max-width: 940px;
@@ -193,21 +207,25 @@ nav a:hover {
     border: 0;
 }
 
-/* ===================== RODAPÉ ===================== */
+/* =========================
+   RODAPÉ
+========================= */
 footer {
     background-color: #f4ecd0;
-    padding: 50px 20px;
+    padding: 30px 20px;
     text-align: center;
     color: #655e5e;
 }
 
 footer img {
-    width: 150px;
+    width: 120px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-/* ===================== RESPONSIVIDADE ===================== */
+/* =========================
+   RESPONSIVO
+========================= */
 @media screen and (max-width: 768px) {
     .card {
         width: 180px;
@@ -215,19 +233,11 @@ footer img {
     }
 
     .banner {
-        max-height: 300px;
+        max-height: 250px;
     }
 
     nav ul {
         flex-direction: column;
         gap: 15px;
-    }
-
-    .formulario {
-        width: 90%;
-    }
-
-    .video iframe {
-        height: 250px;
     }
 }

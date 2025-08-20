@@ -1,42 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Clínica Estética</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header>
-    <div class="caixa">
-      <h1 class="logo"><a href="index.html">Clínica Estética</a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="procedimentos.html">Procedimentos</a></li>
-          <li><a href="contato.html" class="ativo">Contato</a></li>
-          <li><a href="agendamento.html">Agende Agora</a></li>
-        </ul>
-      </nav>
+<header>
+  <div class="caixa">
+    <div class="logo">
+      <img src="img/procedimentos de estetica (1).png" alt="Logo da Clínica">
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="procedimentos.html">Procedimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main class="principal">
-    <h2 class="titulo-principal">Entre em Contato</h2>
-    <form id="formContato" class="formulario">
-      <label>Nome completo:</label>
-      <input type="text" required>
-      <label>E-mail:</label>
-      <input type="email" required>
-      <label>Mensagem:</label>
-      <textarea rows="5" required></textarea>
-      <button type="submit" class="btn-agendar">Enviar</button>
-    </form>
-  </main>
+<main class="principal">
+  <h2 class="titulo-principal">Entre em Contato</h2>
+  <form id="formContato" class="formulario">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
 
-  <footer>
-    <p>&copy; 2025 Clínica Estética</p>
-  </footer>
-</body>
-</html>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit" class="btn-agendar">Enviar mensagem</button>
+  </form>
+</main>

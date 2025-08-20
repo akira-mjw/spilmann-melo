@@ -8,53 +8,50 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header>
     <div class="caixa">
       <h1 class="logo"><a href="index.html">Spilmann Melo</a></h1>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
           <li><a href="procedimentos.html">Procedimentos</a></li>
+          <li><a href="produtos.html" class="ativo">Produtos</a></li>
           <li><a href="agendamento.html">Agendamento</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html" id="loginBtn">Login</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Conteúdo -->
   <main class="principal">
-    <h2 class="titulo-principal">Produtos</h2>
-    <p>Confira alguns produtos que utilizamos e recomendamos em nossos tratamentos:</p>
+    <h2 class="titulo-principal">Nossos Produtos</h2>
+    <p>Confira alguns dos produtos que utilizamos em nossos procedimentos estéticos.</p>
 
-    <section class="produtos-grid">
-      <article class="card">
-        <h3>Creme Facial Hidratante</h3>
-        <p>Hidratação profunda e prevenção de rugas.</p>
-      </article>
-
-      <article class="card">
-        <h3>Máscara Detox</h3>
-        <p>Elimina impurezas e revitaliza a pele.</p>
-      </article>
-
-      <article class="card">
-        <h3>Sérum Antienvelhecimento</h3>
-        <p>Combate linhas de expressão e promove firmeza.</p>
-      </article>
-
-      <article class="card">
-        <h3>Protetor Solar Facial</h3>
-        <p>Proteção diária contra raios UVA e UVB.</p>
-      </article>
+    <section class="procedimentos-grid">
+      <div class="card">
+        <img src="img/produto1.png" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Descrição breve do produto.</p>
+      </div>
+      <div class="card">
+        <img src="img/produto2.png" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Descrição breve do produto.</p>
+      </div>
+      <div class="card">
+        <img src="img/produto3.png" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Descrição breve do produto.</p>
+      </div>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer>
-    <p class="copyright">
-      &copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.
-    </p>
+    <p class="copyright">&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>

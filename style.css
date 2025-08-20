@@ -1,254 +1,231 @@
 :root{
-	--bg:#fffdf7;         /* fundo */
-	--text:#304543;       /* texto */
-	--primary:#cba72c;    /* cor principal */
-	--primary-dark:#a8881d;
-	--muted:#bbbbbb;
-	--panel:#FEFEFE;
+  --bg:#fffdf7;       /* fundo */
+  --text:#304543;     /* texto */
+  --primary:#cba72c;  /* cor principal */
+  --primary-dark:#a8881d;
+  --panel:#FEFEFE;
 }
 
 *{ box-sizing:border-box; }
-
 body{
-	font-family:'Montserrat', sans-serif;
-	background: var(--bg);
-	color: var(--text);
+  font-family:'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
+/* ===== HEADER (mesmo layout Alura) ===== */
 header{
-	background: var(--muted);
-	padding: 20px 0;
+  background: var(--bg);
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.caixa{
+  position:relative;
+  width:940px;
+  margin:0 auto;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.titulo-principal{
+  padding-left:20px;
+  height:15vw;           /* mantém proporção do modelo Alura */
+}
+.logo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:35px;
+  color: var(--text);
+}
+nav{
+  position:absolute;
+  top:110px;             /* igual modelo Alura */
+  right:0;
+}
+nav li{ display:inline; margin:0 0 0 15px; }
+nav a{
+  text-transform:uppercase;
+  color: var(--text);
+  font-weight:bold;
+  font-size:22px;
+  text-decoration:none;
+  border-bottom:2px solid transparent;
+  padding-bottom:2px;
+}
+nav a:hover{
+  color: var(--primary);
+  border-bottom-color: var(--primary);
 }
 
+/* ===== BANNER ===== */
 .banner{ width:100%; display:block; }
 
-.titulo-principal{
-	text-align:center;
-	font-size:2em;
-	margin:0 0 1em;
-	clear:left;
+/* ===== SEÇÕES PRINCIPAIS ===== */
+.titulo-centralizado{
+  text-align:center;
+  font-size:2em;
+  margin:0 0 1em;
+  clear:left;
+  color: var(--text);
 }
-
 .principal{
-	padding:3em 0;
-	background: var(--panel);
-	width:940px;
-	margin:0 auto;
+  padding:3em 0;
+  background: var(--panel);
+  width:940px;
+  margin:0 auto;
 }
-
 .principal p{ margin:0 0 1em; }
 .principal strong{ font-weight:700; }
 .principal em{ font-style:italic; }
 
+/* imagem lateral (modelo Alura) */
 .utensilios{
-	width: calc(40% - 26px);
-	float:left;
-	margin:0 20px 20px 0;
-	border-radius:6px;
+  width: calc(40% - 26px);
+  float:left;
+  margin:0 20px 20px 0;
+  border-radius:6px;
 }
 
-.imagembeneficios{ width:60%; }
-
-.caixa{
-	position:relative;
-	width:940px;
-	margin:0 auto;
-	padding:0 20px;
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-}
-
-nav{ position:absolute; top:110px; right:20px; }
-nav li{ display:inline; margin:0 0 0 15px; }
-
-nav a{
-	text-transform:uppercase;
-	color: var(--text);
-	font-weight:700;
-	font-size:22px;
-	text-decoration:none;
-	padding-bottom:2px;
-	border-bottom:2px solid transparent;
-}
-
-nav a:hover{
-	color: var(--primary);
-	border-bottom-color: var(--primary);
-	text-decoration:none;
-}
-
-/* Produtos / Procedimentos */
+/* ===== LISTA DE PRODUTOS/PROCEDIMENTOS ===== */
 .produtos{
-	width:940px;
-	margin:0 auto;
-	padding:50px 0;
-	text-align:center;
+  width:940px;
+  margin:0 auto;
+  padding:50px 0;
+  text-align:center;
 }
-
 .produtos li{
-	display:inline-block;
-	text-align:center;
-	width:30%;
-	vertical-align:top;
-	margin:0 1.5%;
-	padding:30px 20px;
-	box-sizing:border-box;
-	border:2px solid var(--text);
-	border-radius:10px;
-	background:#fff;
-	transition:border-color .2s, transform .2s;
+  display:inline-block;
+  text-align:center;
+  width:30%;
+  vertical-align:top;
+  margin:0 1.5%;
+  padding:30px 20px;
+  box-sizing:border-box;
+  border:2px solid var(--text);
+  border-radius:10px;
+  background:#fff;
+  transition: border-color .2s, transform .2s;
 }
-
 .produtos li:hover{
-	border-color: var(--primary);
-	transform: translateY(-2px);
+  border-color: var(--primary);
+  transform: translateY(-2px);
 }
-
 .produtos li:active{ border-color: var(--primary-dark); }
-
 .produtos h2{
-	font-size:30px;
-	font-weight:700;
-	color: var(--text);
+  font-size:30px;
+  font-weight:700;
+  color: var(--text);
 }
-
 .produtos li:hover h2{ font-size:34px; }
-
 .produto-descricao{ font-size:18px; }
-
 .produto-preco{
-	font-size:22px;
-	font-weight:700;
-	margin-top:10px;
-	color: var(--primary-dark);
+  font-size:22px;
+  font-weight:700;
+  margin-top:10px;
+  color: var(--primary-dark);
 }
-
 .produto-img{ width:100%; height:auto; border-radius:6px; margin:12px 0; }
 
-/* Benefícios */
-.beneficios{
-	padding:3em 0;
-	background:#f3f0e4;
-}
-
-.conteudo-beneficios{
-	width:640px;
-	margin:0 auto;
-	text-align:center;
-}
-
+/* ===== BENEFÍCIOS ===== */
+.beneficios{ padding:3em 0; background:#f3f0e4; }
+.conteudo-beneficios{ width:640px; margin:0 auto; text-align:center; }
 .lista-beneficios{
-	width:40%;
-	display:inline-block;
-	vertical-align:top;
-	text-align:left;
+  width:40%;
+  display:inline-block;
+  vertical-align:top;
+  text-align:left;
 }
-
 .itens{ line-height:1.6; }
 .itens:first-child{ font-weight:700; }
 .itens:before{ content:"✔️ "; }
-
 .imagem-beneficios{
-	width:60%;
-	opacity:1;
-	transition:opacity 400ms, box-shadow 200ms;
-	box-shadow:10px 10px 10px 0 rgba(0,0,0,.2);
-	border-radius:8px;
+  width:60%;
+  opacity:1;
+  transition:opacity 400ms, box-shadow 200ms;
+  box-shadow:10px 10px 10px 0 rgba(0,0,0,.2);
+  border-radius:8px;
 }
 
-/* VÍDEO centralizado no padrão do Alura */
+/* ===== VÍDEO CENTRALIZADO ===== */
 .video{
-	width:560px;
-	margin:2em auto;      /* centraliza */
+  width:560px;
+  margin:2em auto;
 }
 .video iframe{
-	width:100%;
-	height:315px;
-	border:0;
-	border-radius:8px;
-	box-shadow:0 4px 20px rgba(0,0,0,0.2);
+  width:100%;
+  height:315px;
+  border:0;
+  border-radius:8px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
 }
 
-/* Formulário e tabela (contato) */
-form{ margin:40px 0; }
-
-.form-center{ width:940px; margin:0 auto; }
-
-form label, form legend{
-	display:block;
-	font-size:20px;
-	margin:0 0 10px;
-}
-
-form input, form select, form textarea{
-	display:block;
-	margin:0 0 20px;
-	padding:10px 16px;
-	width:50%;
-	border:2px solid var(--text);
-	border-radius:8px;
-	background:#fff;
-	color: var(--text);
-}
-
-.input-padrao{ width:50%; }
-.checkbox{ margin:20px 0; }
-
-.enviar{
-	width:40%;
-	padding:15px 0;
-	background: var(--primary);
-	color:#fff;
-	font-weight:700;
-	font-size:18px;
-	border:none;
-	border-radius:8px;
-	transition: transform .2s, background .2s;
-	cursor:pointer;
-}
-.enviar:hover{ background: var(--primary-dark); transform: scale(1.02); }
-
-/* Tabela */
-table{ margin:20px 0 40px; }
-thead{ background: var(--text); color:white; font-weight:700; }
-td, th{ border:1px solid var(--text); padding:8px 15px; }
-
-/* Mapa */
+/* ===== MAPA ===== */
 .mapa{ padding:3em 0; background-color:#f7f4ea; }
 .mapa p{ margin:0 0 2em; text-align:center; }
 .mapa-conteudo{ width:940px; margin:0 auto; }
 
-/* Footer com textura que você passou */
+/* ===== FORMULÁRIOS ===== */
+form{ margin:40px 0; }
+.form-center{ width:940px; margin:0 auto; }
+form label, form legend{
+  display:block; font-size:20px; margin:0 0 10px;
+}
+form input, form select, form textarea{
+  display:block;
+  margin:0 0 20px;
+  padding:10px 16px;
+  width:50%;
+  border:2px solid var(--text);
+  border-radius:8px;
+  background:#fff;
+  color: var(--text);
+}
+.input-padrao{ width:50%; }
+.checkbox{ margin:20px 0; }
+.enviar{
+  width:40%;
+  padding:15px 0;
+  background: var(--primary);
+  color:#fff;
+  font-weight:700;
+  font-size:18px;
+  border:none;
+  border-radius:8px;
+  transition: transform .2s, background .2s;
+  cursor:pointer;
+}
+.enviar:hover{ background: var(--primary-dark); transform: scale(1.02); }
+
+/* ===== TABELA ===== */
+table{ margin:20px 0 40px; }
+thead{ background: var(--text); color:white; font-weight:700; }
+td, th{ border:1px solid var(--text); padding:8px 15px; }
+
+/* ===== FOOTER (textura que você enviou) ===== */
 footer{
-	text-align:center;
-	background:url("https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/textura%20github.jpg") center/cover no-repeat;
-	padding:40px 0;
-	color:#fff;
+  text-align:center;
+  background:url("https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/textura%20github.jpg") center/cover no-repeat;
+  padding:40px 0;
+  color:#fff;
 }
-
 footer img{
-	width:120px;
-	height:auto;
-	filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
+  width:120px; height:auto;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
 }
+.copyright{ color:#ffffff; font-size:13px; margin:20px 0 0; }
 
-.copyright{
-	color:#ffffff;
-	font-size:13px;
-	margin:20px 0 0;
-}
-
-/* Responsivo */
+/* ===== RESPONSIVO ===== */
 @media screen and (max-width: 480px){
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .form-center{
-		width:auto; padding:0 16px;
-	}
-	h1{ text-align:center; }
-	nav{ position:static; margin-top:10px; }
-	.lista-beneficios, .imagem-beneficios{ width:100%; }
-	.utensilios{ width:100%; float:none; margin:0 0 16px 0; }
-	form input, form select, form textarea, .input-padrao, .enviar{ width:100%; }
-	.produtos{ width:auto; padding:40px 16px; }
-	.produtos li{ width:100%; margin:12px 0; }
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .form-center{
+    width:auto; padding:0 16px;
+  }
+  h1{ text-align:center; }
+  nav{ position:static; margin-top:10px; }
+  .lista-beneficios, .imagem-beneficios{ width:100%; }
+  .utensilios{ width:100%; float:none; margin:0 0 16px 0; }
+  form input, form select, form textarea, .input-padrao, .enviar{ width:100%; }
+  .produtos{ width:auto; padding:40px 16px; }
+  .produtos li{ width:100%; margin:12px 0; }
 }

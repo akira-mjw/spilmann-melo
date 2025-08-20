@@ -2,14 +2,21 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Procedimentos - Spilmann Melo Estética</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <title>Procedimentos - Estética Spilmann</title>
 </head>
 <body>
   <header>
     <div class="caixa">
-      <h1><img src="imagens/logo.png" alt="Logo Spilmann Melo Estética"></h1>
+      <h1 class="logo">
+        <img class="titulo-principal" src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética Spilmann">
+        Estética Spilmann
+      </h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -20,32 +27,91 @@
     </div>
   </header>
 
+  <!-- BANNER -->
+  <img
+    class="banner"
+    src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20banner%20github.png"
+    alt="Banner Procedimentos">
+
   <main>
+    <p>conheça nossos protocolos com foco em resultado e segurança.</p>
+
+    <section class="principal">
+      <h2 class="titulo-centralizado">Nossos Procedimentos</h2>
+
+      <img src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20corpo%20github.jpg"
+           alt="Tratamentos corporais"
+           class="utensilios">
+
+      <p>
+        Oferecemos limpeza de pele, hidratação facial e corporal, massoterapia, peelings, skinbooster,
+        drenagem linfática e protocolos combinados para diferentes objetivos.
+      </p>
+    </section>
+
     <ul class="produtos">
       <li>
-        <h2>Limpeza de Pele</h2>
-        <img src="imagens/limpeza.jpg" alt="Procedimento de limpeza de pele">
-        <p class="produto-descricao">Tratamento profundo para remover impurezas e revitalizar a pele.</p>
-        <p class="produto-preco">R$ 120,00</p>
+        <h2>Facial Glow</h2>
+        <img src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20cabelo%20github.jpg" alt="Facial Glow" class="produto-img">
+        <p class="produto-descricao">Limpeza profunda + hidratação intensiva</p>
+        <p class="produto-preco">R$ 189,00</p>
       </li>
       <li>
-        <h2>Botox</h2>
-        <img src="imagens/botox.jpg" alt="Aplicação de botox">
-        <p class="produto-descricao">Redução de rugas e linhas de expressão para um aspecto mais jovem.</p>
-        <p class="produto-preco">R$ 850,00</p>
+        <h2>Corporal Slim</h2>
+        <img src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20corpo%20github.jpg" alt="Corporal Slim" class="produto-img">
+        <p class="produto-descricao">Modeladora + drenagem linfática</p>
+        <p class="produto-preco">R$ 229,00</p>
       </li>
       <li>
-        <h2>Preenchimento Facial</h2>
-        <img src="imagens/preenchimento.jpg" alt="Aplicação de preenchimento facial">
-        <p class="produto-descricao">Técnica avançada para harmonização facial e valorização dos traços.</p>
-        <p class="produto-preco">R$ 1.200,00</p>
+        <h2>Bioestimulador</h2>
+        <img src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20seringas%20github.png" alt="Bioestimulador" class="produto-img">
+        <p class="produto-descricao">Procedimentos injetáveis supervisionados</p>
+        <p class="produto-preco">R$ 690,00</p>
       </li>
     </ul>
+
+    <section class="beneficios">
+      <h3 class="titulo-centralizado">Por que escolher a Spilmann?</h3>
+
+      <div class="conteudo-beneficios">
+        <ul class="lista-beneficios">
+          <li class="itens">Protocolos seguros</li>
+          <li class="itens">Profissionais certificados</li>
+          <li class="itens">Produtos de alta performance</li>
+          <li class="itens">Ambiente acolhedor</li>
+          <li class="itens">Resultados mensuráveis</li>
+          <li class="itens">Acompanhamento pós-tratamento</li>
+        </ul>
+        <img
+          src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20seringas%20github.png"
+          class="imagem-beneficios" alt="Benefícios">
+      </div>
+
+      <!-- VÍDEO CENTRALIZADO -->
+      <div class="video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/y4yTpwh_ZFY?si=pGPUyMPzTif9qNDf"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="mapa">
+      <h3 class="titulo-centralizado">Onde estamos</h3>
+      <p>venha nos visitar e faça sua avaliação.</p>
+      <div class="mapa-conteudo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr"
+          width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="">
+        </iframe>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <img src="imagens/logo.png" alt="Logo Spilmann Melo Estética">
-    <p class="copyright">&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
+    <img src="https://raw.githubusercontent.com/akira-mjw/spilmann-melo/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética Spilmann">
+    <p class="copyright">&copy; Copyright Estética Spilmann - 2025</p>
   </footer>
 </body>
 </html>

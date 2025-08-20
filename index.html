@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style-home.css">
-	<link rel="stylesheet" href="style.css">
-	<title>Estética Spilmann</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spilmann Melo - Estética</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<header>
-		<div class="caixa">
-			<h1 class="logo">
-				<img class="titulo-principal" src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética Spilmann">
-				Estética Spilmann
-			</h1>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Spilmann Melo">
+      <h1>Spilmann Melo - Estética</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#procedimentos">Procedimentos</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="produtos.html">Procedimentos</a></li>
-					<li><a href="contato.html">Contato</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+  <!-- Seção Sobre -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Na Spilmann Melo Estética, oferecemos tratamentos de alta qualidade para realçar sua beleza natural,
+       combinando tecnologia moderna com um atendimento humanizado.</p>
+  </section>
 
-	<img class="banner" src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20banner%20github.png" alt="Banner Estética">
+  <!-- Seção Procedimentos -->
+  <section id="procedimentos" class="procedimentos">
+    <h2>Procedimentos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Botox</h3>
+        <p>Reduza linhas de expressão e rugas com um procedimento seguro e eficaz.</p>
+      </div>
+      <div class="card">
+        <h3>Preenchimento</h3>
+        <p>Recupere o volume e realce seus traços faciais de forma natural.</p>
+      </div>
+      <div class="card">
+        <h3>Peeling</h3>
+        <p>Renove sua pele e conquiste uma aparência mais jovem e saudável.</p>
+      </div>
+    </div>
+  </section>
 
-	<main>
-		<section class="principal">
-			<h2 class="titulo-principal">Sobre a Estética Spilmann</h2>
+  <!-- Seção Vídeo -->
+  <section id="video" class="video-section">
+    <h2>Conheça Nossa Estética</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/y4yTpwh_ZFY?si=pGPUyMPzTif9qNDf"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-			<img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20cabelo%20github.jpg" alt="Tratamentos de cabelo" class="utensilios">
+  <!-- Seção Agendamento -->
+  <section id="agendamento" class="agendamento">
+    <h2>Agende Agora</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
+      <select required>
+        <option value="" disabled selected>Escolha o procedimento</option>
+        <option>Botox</option>
+        <option>Preenchimento</option>
+        <option>Peeling</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-			<p>Localizada no coração da cidade, a <strong>Estética Spilmann</strong> oferece tratamentos de beleza e bem-estar com excelência e sofisticação. Desde 2019, proporcionamos aos nossos clientes resultados de alta qualidade.</p>
+  <!-- Seção Contato -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>📍 Rua Exemplo, 123 - Curitiba, PR</p>
+    <p>📞 (41) 99999-9999</p>
+    <p>📧 contato@spilmannmelo.com</p>
+  </section>
 
-			<p id="missao"><em>Nossa missão é: <strong>"Valorizar sua autoestima e cuidar da sua saúde e beleza"</strong>.</em></p>
-
-			<p>Trabalhamos com profissionais qualificados e produtos de ponta, garantindo resultados confiáveis e atendimento personalizado.</p>
-		</section>
-
-		<section class="beneficios">
-			<h3 class="titulo-principal">Benefícios</h3>
-
-			<div class="conteudo-beneficios">
-				<ul class="lista-beneficios">
-					<li class="itens">Atendimento Personalizado</li>
-					<li class="itens">Espaço Confortável</li>
-					<li class="itens">Localização Privilegiada</li>
-					<li class="itens">Profissionais Qualificados</li>
-					<li class="itens">Pontualidade</li>
-					<li class="itens">Higiene e Limpeza</li>
-				</ul>
-				<img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20seringas%20github.png" class="imagem-beneficios" alt="Benefícios Estética">
-			</div>
-
-			<div class="video">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-			</div>
-		</section>
-
-		<section class="mapa">
-			<h3 class="titulo-principal">Nosso estabelecimento</h3>
-			<p>Nosso espaço está localizado no coração da cidade, proporcionando conforto e praticidade aos clientes.</p>
-
-			<div class="mapa-conteudo">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-			</div>
-		</section>
-	</main>
-
-	<footer style="background: url('https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/textura%20github.jpg'); color:#fff;">
-		<img src="https://github.dev/akira-mjw/spilmann-melo/blob/ef614754f3a137ca9562d1e9fa1e853173fd80d1/img/imagem%20logo.png" alt="Logo Estética">
-		<p class="copyright">&copy; Copyright Estética Spilmann - 2025</p>
-	</footer>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Spilmann Melo Estética - Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
